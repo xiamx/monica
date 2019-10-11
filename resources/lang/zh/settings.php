@@ -195,7 +195,7 @@ return [
     'subscriptions_back' => '返回设置',
     'subscriptions_upgrade_title' => '升级您的帐户',
     'subscriptions_upgrade_choose' => '您选择了:plan',
-    'subscriptions_upgrade_infos' => '请在下方输入您的付款信息：',
+    'subscriptions_upgrade_infos' => '请在下方选择付款方式：',
     'subscriptions_upgrade_name' => '持卡人姓名',
     'subscriptions_upgrade_zip' => '邮政编码',
     'subscriptions_upgrade_credit' => '信用卡或借记卡',

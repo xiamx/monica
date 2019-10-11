@@ -2,7 +2,7 @@
 </style>
 
 <template>
-  <form ref="form" class="mb4" :action="callback" method="post" @submit.prevent="subscribe()">
+  <form ref="form" class="mb4" :action="callback" method="post" @submit.prevent="">
     <notifications group="subscription" position="top middle" :duration="5000" width="400" />
 
     <div class="form-group">
@@ -33,45 +33,24 @@
       </div>
 
       <div v-else-if="! paymentProcessed" id="payment-elements" class="b--gray-monica ba pa4 br2 mb3 bg-black-05">
-        <div class="form-row">
-          <div class="mb3">
-            <form-input
-              :id="'cardholder-name'"
-              v-model="name"
-              :input-type="'text'"
-              :iclass="'br3 b--black-30 ba pa3 w-100 f4'"
-              :required="true"
-              :title="$t('settings.subscriptions_upgrade_name')"
-            />
-          </div>
-
-          <div class="mb3">
-            <form-input
-              :id="'address-zip'"
-              v-model="zip"
-              :input-type="'text'"
-              :iclass="'br3 b--black-30 ba pa3 w-100 f4'"
-              :title="$t('settings.subscriptions_upgrade_zip')"
-            />
-          </div>
-
-          <label for="card-element">
-            {{ $t('settings.subscriptions_upgrade_credit') }}
-          </label>
-          <div id="card-element">
-            <!-- a Stripe Element will be inserted here. -->
-          </div>
-        </div>
-
+        <button
+          id="card-button"
+          class="btn btn-primary w-100 mt3"
+          :disabled="paymentProcessing"
+          @click.prevent="wechatPayment()"
+        >
+        微信支付
+        </button>
         <button
           id="card-button"
           class="btn btn-primary w-100 mt3"
           :disabled="paymentProcessing"
           @click.prevent="confirm ? confirmPayment() : subscribe()"
-          v-html="$t('settings.subscriptions_upgrade_submit', { amount: amount })"
         >
+        支付宝
         </button>
       </div>
+      <img :src="paymentQRUrl">
       <a v-if="paymentProcessed" :href="callback"
          class="btn btn-secondary w-100 tc"
       >
@@ -136,6 +115,8 @@ export default {
       cardElement: null,
       paymentMethod: '',
       token: '',
+      paymentQRUrl: '',
+      rate: 0,
       paymentProcessing: false,
       paymentProcessed: false,
     };
@@ -153,47 +134,13 @@ export default {
 
   methods: {
     start() {
+      this.paymentQRUrl = '';
+      if (this.plan === 'annual') {
+        this.rate = 1645
+      } else if (this.plan === 'monthly') {
+        this.rate = 224
+      }
       this.stripe = Stripe(this.stripeKey);
-
-      const elements = this.stripe.elements();
-
-      // Custom styling can be passed to options when creating an Element.
-      // (Note that this demo uses a wider set of styles than the guide below.)
-      const style = {
-        base: {
-          color: '#32325d',
-          lineHeight: '18px',
-          fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-          fontSmoothing: 'antialiased',
-          fontSize: '16px',
-          '::placeholder': {
-            color: '#aab7c4'
-          }
-        },
-        invalid: {
-          color: '#fa755a',
-          iconColor: '#fa755a'
-        }
-      };
-
-      // Create an instance of the card Element
-      this.cardElement = elements.create('card', {
-        hidePostalCode: true,
-        style: style
-      });
-
-      // Add an instance of the card Element into the `card-element` <div>
-      this.cardElement.mount('#card-element');
-
-      // Handle real-time validation errors from the card Element.
-      var self = this;
-      this.cardElement.addEventListener('change', function(event) {
-        if (event.error) {
-          self.errors = event.error.message;
-        } else {
-          self.errors = '';
-        }
-      });
     },
 
     handleError(error) {
@@ -246,6 +193,24 @@ export default {
       setTimeout(function () {
         self.$refs.form.submit();
       }, 10);
+    },
+
+    wechatPayment() {
+      var self = this;
+
+      this.paymentProcessing = true;
+      this.paymentProcessed = false;
+      this.errorMessage = '';
+
+      this.stripe.createSource({
+        type: 'wechat',
+        amount: this.rate,
+        currency: 'cad'
+      }).then(function(result) {
+        console.log(result)
+        var source = result.source;
+        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url
+      })
     },
 
     confirmPayment() {

@@ -35,6 +35,7 @@
         "monicahq/laravel-cloudflare": "^1.0",
         "monicahq/laravel-sabre": "^1.1",
         "ok/ipstack-client": "^1.2",
+        "overtrue/laravel-wechat": "~5.0",
         "paragonie/constant_time_encoding": "^2.2",
         "pragmarx/countries-laravel": "^0.6.1",
         "pragmarx/google2fa": "^5.0",
