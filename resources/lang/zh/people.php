@@ -8,7 +8,7 @@ return [
     'people_list_last_updated' => '最近更新:',
     'people_list_number_reminders' => ':count 个提醒',
     'people_list_blank_title' => '您还没有任何联系人',
-    'people_list_blank_cta' => '添加某人',
+    'people_list_blank_cta' => '添加新人',
     'people_list_sort' => '排序',
     'people_list_stats' => ':count 个联系人',
     'people_list_firstnameAZ' => '以名字A → Z排序',
