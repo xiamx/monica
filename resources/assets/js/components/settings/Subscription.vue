@@ -39,18 +39,18 @@
           :disabled="paymentProcessing"
           @click.prevent="wechatPayment()"
         >
-        微信支付
+          微信支付
         </button>
         <button
           id="card-button"
           class="btn btn-primary w-100 mt3"
           :disabled="paymentProcessing"
-          @click.prevent="confirm ? confirmPayment() : subscribe()"
+          @click.prevent="alipayPayment"
         >
-        支付宝
+          支付宝
         </button>
       </div>
-      <img :src="paymentQRUrl">
+      <img :src="paymentQRUrl" />
       <a v-if="paymentProcessed" :href="callback"
          class="btn btn-secondary w-100 tc"
       >
@@ -136,9 +136,9 @@ export default {
     start() {
       this.paymentQRUrl = '';
       if (this.plan === 'annual') {
-        this.rate = 1645
+        this.rate = 1645;
       } else if (this.plan === 'monthly') {
-        this.rate = 224
+        this.rate = 224;
       }
       this.stripe = Stripe(this.stripeKey);
     },
@@ -195,6 +195,27 @@ export default {
       }, 10);
     },
 
+    alipayPayment() {
+      var self = this;
+
+      this.paymentProcessing = true;
+      this.paymentProcessed = false;
+      this.errorMessage = '';
+
+      this.stripe.createSource({
+        type: 'alipay',
+        amount: this.rate,
+        redirect: {
+          return_url: 'http://localhost:8000'
+        },
+        currency: 'cad'
+      }).then(function(result) {
+        console.log(result);
+        var source = result.source;
+        window.location.replace(source.redirect.url)
+        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url;
+      });
+    },
     wechatPayment() {
       var self = this;
 
@@ -207,10 +228,10 @@ export default {
         amount: this.rate,
         currency: 'cad'
       }).then(function(result) {
-        console.log(result)
+        console.log(result);
         var source = result.source;
-        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url
-      })
+        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url;
+      });
     },
 
     confirmPayment() {
