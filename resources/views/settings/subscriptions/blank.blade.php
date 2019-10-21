@@ -115,14 +115,8 @@
           </div>
 
           <h3 class="tc mb4 mt3">{{ trans('settings.subscriptions_help_title') }}</h3>
-          <h4>{{ trans('settings.subscriptions_help_opensource_title') }}</h4>
-          <p class="mb4">{{ trans('settings.subscriptions_help_opensource_desc') }}</p>
-
           <h4>{{ trans('settings.subscriptions_help_limits_title') }}</h4>
           <p class="mb4">{{ trans('settings.subscriptions_help_limits_plan', ['number' => config('monica.number_of_allowed_contacts_free_account')]) }}</p>
-
-          <h4>{{ trans('settings.subscriptions_help_discounts_title') }}</h4>
-          <p class="mb4">{!! trans('settings.subscriptions_help_discounts_desc', ['support' => 'mailto:regis@monicahq.com']) !!}</p>
 
           <h4>{{ trans('settings.subscriptions_help_change_title') }}</h4>
           <p class="mb4">{{ trans('settings.subscriptions_help_change_desc') }}</p>
