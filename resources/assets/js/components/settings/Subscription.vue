@@ -45,7 +45,7 @@
           id="card-button"
           class="btn btn-primary w-100 mt3"
           :disabled="paymentProcessing"
-          @click.prevent="confirm ? confirmPayment() : subscribe()"
+          @click.prevent="alipayPayment"
         >
           支付宝
         </button>
@@ -195,6 +195,27 @@ export default {
       }, 10);
     },
 
+    alipayPayment() {
+      var self = this;
+
+      this.paymentProcessing = true;
+      this.paymentProcessed = false;
+      this.errorMessage = '';
+
+      this.stripe.createSource({
+        type: 'alipay',
+        amount: this.rate,
+        redirect: {
+          return_url: 'http://localhost:8000'
+        },
+        currency: 'cad'
+      }).then(function(result) {
+        console.log(result);
+        var source = result.source;
+        window.location.replace(source.redirect.url)
+        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url;
+      });
+    },
     wechatPayment() {
       var self = this;
 

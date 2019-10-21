@@ -45,20 +45,6 @@
           </div>
         </div>
         <div class="{{ htmldir() == 'ltr' ? 'fl' : 'fr' }} w-50-ns w-100 pa2">
-          <div class="br3 ba b--gray-monica bg-white mb3">
-            <div class="pa3 bb b--gray-monica">
-              <p class="mb1 b">☀️ {{ trans('dashboard.product_changes') }} <span class="fr normal"><a href="changelog">{{ trans('dashboard.product_view_details') }}</a></span></p>
-              <ul>
-                @foreach ($changelogs as $changelog)
-                <li class="mb1">
-                  <span class="gray f6">{{ $changelog['date'] }}</span>
-                  <span class="stat-description">{{ $changelog['title'] }}</span>
-                </li>
-                @endforeach
-              </ul>
-            </div>
-          </div>
-
           <dashboard-log :default-active-tab="'{!! auth()->user()->dashboard_active_tab !!}'"></dashboard-log>
 
           <div class="br3 ba b--gray-monica bg-white mb3">
@@ -76,6 +62,20 @@
                   <span class="db f3 fw5 orange">{{ $number_of_gifts }}</span>
                   <span class="stat-description">{{ trans('dashboard.statistics_gifts') }}</span>
                 </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="br3 ba b--gray-monica bg-white mb3">
+            <div class="pa3 bb b--gray-monica">
+              <p class="mb1 b">☀️ {{ trans('dashboard.product_changes') }} <span class="fr normal"><a href="changelog">{{ trans('dashboard.product_view_details') }}</a></span></p>
+              <ul>
+                @foreach ($changelogs as $changelog)
+                <li class="mb1">
+                  <span class="gray f6">{{ $changelog['date'] }}</span>
+                  <span class="stat-description">{{ $changelog['title'] }}</span>
+                </li>
+                @endforeach
               </ul>
             </div>
           </div>

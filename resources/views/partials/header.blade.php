@@ -33,9 +33,6 @@
           <a href="{{ route('settings.index') }}" class="header-nav-item-link dib dn-l">
             {{ trans('app.header_settings_link') }}
           </a>
-          <a href="{{ route('changelog.index') }}" class="header-nav-item-link dib dn-l">
-            {{ trans('app.header_changelog_link') }}
-          </a>
           <a href="logout" class="header-nav-item-link dib dn-l">
             {{ trans('app.header_logout_link') }}
           </a>
