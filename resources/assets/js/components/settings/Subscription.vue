@@ -39,7 +39,7 @@
           :disabled="paymentProcessing"
           @click.prevent="wechatPayment()"
         >
-        微信支付
+          微信支付
         </button>
         <button
           id="card-button"
@@ -47,10 +47,10 @@
           :disabled="paymentProcessing"
           @click.prevent="confirm ? confirmPayment() : subscribe()"
         >
-        支付宝
+          支付宝
         </button>
       </div>
-      <img :src="paymentQRUrl">
+      <img :src="paymentQRUrl" />
       <a v-if="paymentProcessed" :href="callback"
          class="btn btn-secondary w-100 tc"
       >
@@ -136,9 +136,9 @@ export default {
     start() {
       this.paymentQRUrl = '';
       if (this.plan === 'annual') {
-        this.rate = 1645
+        this.rate = 1645;
       } else if (this.plan === 'monthly') {
-        this.rate = 224
+        this.rate = 224;
       }
       this.stripe = Stripe(this.stripeKey);
     },
@@ -207,10 +207,10 @@ export default {
         amount: this.rate,
         currency: 'cad'
       }).then(function(result) {
-        console.log(result)
+        console.log(result);
         var source = result.source;
-        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url
-      })
+        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url;
+      });
     },
 
     confirmPayment() {
