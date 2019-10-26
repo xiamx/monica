@@ -469,6 +469,16 @@ class Account extends Model
     }
 
     /**
+     * Get the Prepaid subscriptions associated with the account
+     *
+     * @return HasOne
+     */
+    public function prepaidSubscriptions()
+    {
+        return $this->hasMany(PrepaidSubscription::class);
+    }
+
+    /**
      * Get the Occupation records associated with the account.
      *
      * @return HasMany

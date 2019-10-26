@@ -3,15 +3,12 @@
 namespace App\Traits;
 
 use App\Helpers\DateHelper;
-use Laravel\Cashier\Billable;
 use App\Helpers\InstanceHelper;
 use App\Exceptions\StripeException;
 use Illuminate\Support\Facades\Log;
 
 trait Subscription
 {
-    use Billable;
-
     /**
      * Process the upgrade payment.
      *
@@ -44,8 +41,7 @@ trait Subscription
             return true;
         }
 
-        return $this->subscribed(config('monica.paid_plan_monthly_friendly_name'))
-            || $this->subscribed(config('monica.paid_plan_annual_friendly_name'));
+        return !!$this->prepaidSubscriptions->first();
     }
 
     /**
@@ -55,13 +51,8 @@ trait Subscription
      */
     public function getSubscribedPlan()
     {
-        $subscription = $this->subscription(config('monica.paid_plan_monthly_friendly_name'));
-
-        if (! $subscription) {
-            $subscription = $this->subscription(config('monica.paid_plan_annual_friendly_name'));
-        }
-
-        return $subscription;
+        // TODO: fix me, this is not null, return a real plan or refactor this logic
+        return null;
     }
 
     /**

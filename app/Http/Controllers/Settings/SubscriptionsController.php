@@ -75,7 +75,6 @@ class SubscriptionsController extends Controller
         return view('settings.subscriptions.upgrade', [
             'planInformation' => InstanceHelper::getPlanInformationFromConfig($plan),
             'nextTheoriticalBillingDate' => DateHelper::getFullDate(DateHelper::getNextTheoriticalBillingDate($plan)),
-            'intent' => auth()->user()->account->createSetupIntent(),
         ]);
     }
 
@@ -92,6 +91,16 @@ class SubscriptionsController extends Controller
             ),
             'redirect' => request('redirect'),
         ]);
+    }
+
+    /**
+     * Handle alipay callback
+     * 
+     * @return \Illuminate\View\View|\Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse
+     */
+    public function alipayCallback(Request $request)
+    {
+        return view('settings.subscriptions.success');
     }
 
     /**

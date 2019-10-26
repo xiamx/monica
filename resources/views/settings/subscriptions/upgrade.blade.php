@@ -34,7 +34,6 @@
       <stripe-subscription
         :name="'{{ auth()->user()->name }}'"
         :stripe-key="'{{ config('cashier.key') }}'"
-        :client-secret="'{{ $intent->client_secret }}'"
         :plan="'{{ $planInformation['type'] }}'"
         :amount="'{{ $planInformation['friendlyPrice'] }}'"
         :callback="'{{ route('settings.subscriptions.payment') }}'"

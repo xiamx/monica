@@ -257,6 +257,7 @@ Route::middleware(['auth', 'verified', 'mfa'])->group(function () {
         Route::name('subscriptions.')->group(function () {
             Route::get('/settings/subscriptions', 'Settings\\SubscriptionsController@index')->name('index');
             Route::get('/settings/subscriptions/upgrade', 'Settings\\SubscriptionsController@upgrade')->name('upgrade');
+            Route::get('/settings/subscriptions/upgrade/alipaycallback', 'Settings\\SubscriptionsController@alipayCallback')->name('alipayCallback');
             Route::get('/settings/subscriptions/upgrade/success', 'Settings\\SubscriptionsController@upgradeSuccess')->name('upgrade.success');
             Route::get('/settings/subscriptions/confirmPayment/{id}', 'Settings\\SubscriptionsController@confirmPayment')->name('confirm');
             Route::post('/settings/subscriptions/processPayment', 'Settings\\SubscriptionsController@processPayment')->name('payment');

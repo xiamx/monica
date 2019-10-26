@@ -203,7 +203,7 @@ return [
     'subscriptions_upgrade_charge' => '您将支付 :price ，下次扣费日期：:date。如果您改变主意了，您可以随时取消订阅。',
     'subscriptions_upgrade_charge_handled' => '支付服务由第三方支付平台 <a href=":url">Stripe</a> 提供，我们无法接触到您的个人信息。',
     'subscriptions_upgrade_success' => '感谢您的订阅！',
-    'subscriptions_upgrade_thanks' => '欢迎来到让世界变得更美好的社区。',
+    'subscriptions_upgrade_thanks' => '欢迎来到让世界变得更美好的社区。', // FIXME: bad translation
 
     'subscriptions_payment_confirm_title' => '确认您的 :amount 付款',
     'subscriptions_payment_confirm_information' => '需要额外信息来处理您的付款，请您补充下列付款信息。',

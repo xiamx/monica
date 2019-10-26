@@ -45,7 +45,7 @@
           id="card-button"
           class="btn btn-primary w-100 mt3"
           :disabled="paymentProcessing"
-          @click.prevent="alipayPayment"
+          @click.prevent="alipayPayment()"
         >
           支付宝
         </button>
@@ -160,7 +160,7 @@ export default {
       this.paymentProcessed = false;
 
       this.stripe.handleCardSetup(
-        self.clientSecret,
+        self.clientSecret, // TODO: FIXME: client secret no longer used
         self.cardElement,
         {
           payment_method_data: {
@@ -206,7 +206,7 @@ export default {
         type: 'alipay',
         amount: this.rate,
         redirect: {
-          return_url: 'http://localhost:8000'
+          return_url: 'http://localhost:8000/settings/subscriptions/upgrade/alipaycallback'
         },
         currency: 'cad'
       }).then(function(result) {
