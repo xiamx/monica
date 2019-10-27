@@ -2,6 +2,9 @@
 
 namespace Tests\Feature;
 
+use \DateTime;
+use App\Helpers\DateHelper;
+use App\Models\Account\PrepaidSubscription;
 use Stripe\Plan;
 use Stripe\Stripe;
 use Stripe\Product;
@@ -120,12 +123,10 @@ class AccountSubscriptionTest extends FeatureTestCase
     {
         $user = $this->signin();
 
-        factory(Subscription::class)->create([
+        $plan = factory(PrepaidSubscription::class)->create([
             'account_id' => $user->account_id,
             'name' => 'Annual',
-            'stripe_plan' => 'annual',
-            'stripe_id' => 'test',
-            'quantity' => 1,
+            'ends_at' => Date('y:m:d', strtotime('+3 days'))
         ]);
 
         $this->assertEquals('Annual', $user->account->getSubscribedPlanName());
@@ -135,28 +136,25 @@ class AccountSubscriptionTest extends FeatureTestCase
     {
         $user = $this->signin();
 
-        factory(Subscription::class)->create([
+        $expected = new DateTime('2022-01-01');
+        $plan = factory(PrepaidSubscription::class)->create([
             'account_id' => $user->account_id,
             'name' => 'Annual',
-            'stripe_plan' => 'annual',
-            'stripe_id' => 'test',
-            'quantity' => 1,
+            'ends_at' => $expected
         ]);
 
-        $this->expectException(\App\Exceptions\StripeException::class);
-        $user->account->getNextBillingDate();
+        $actual = $user->account->getNextBillingDate();
+        $this->assertEquals($expected, new DateTime($actual));
     }
 
     public function test_it_throw_an_error_on_cancel()
     {
         $user = $this->signin();
 
-        factory(Subscription::class)->create([
+        $plan = factory(PrepaidSubscription::class)->create([
             'account_id' => $user->account_id,
             'name' => 'Annual',
-            'stripe_plan' => 'annual',
-            'stripe_id' => 'test',
-            'quantity' => 1,
+            'ends_at' => new DateTime('2022-01-01')
         ]);
 
         $this->expectException(\App\Exceptions\StripeException::class);

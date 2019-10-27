@@ -44,31 +44,18 @@ trait Subscription
         return !!$this->prepaidSubscriptions->first();
     }
 
-    /**
-     * Get the subscription the account is subscribed to.
-     *
-     * @return \Laravel\Cashier\Subscription|null
-     */
-    public function getSubscribedPlan()
-    {
-        // TODO: fix me, this is not null, return a real plan or refactor this logic
-        return null;
+    public function hasIncompletePayment() {
+        return false;
     }
 
     /**
-     * Get the id of the plan the account is subscribed to.
+     * Get the subscription the account is subscribed to.
      *
-     * @return string
+     * @return App\Models\Account\PrepaidSubscriptions|null
      */
-    public function getSubscribedPlanId()
+    public function getSubscribedPlan()
     {
-        $plan = $this->getSubscribedPlan();
-
-        if (! is_null($plan)) {
-            return $plan->stripe_plan;
-        }
-
-        return '';
+        return auth()->user()->account->prepaidSubscriptions->where('account_id', auth()->user()->account_id)->first();
     }
 
     /**
@@ -112,7 +99,11 @@ trait Subscription
      */
     public function hasInvoices()
     {
-        return $this->subscriptions()->count() > 0;
+        return $this->prepaidSubscriptions()->count() > 0;
+    }
+
+    public function invoices() {
+        return [];
     }
 
     /**
@@ -125,13 +116,11 @@ trait Subscription
         // Weird method to get the next billing date from Laravel Cashier
         // see https://stackoverflow.com/questions/41576568/get-next-billing-date-from-laravel-cashier
         return $this->stripeCall(function () {
-            $subscriptions = $this->asStripeCustomer()['subscriptions'];
-            if (! $subscriptions || count($subscriptions->data) <= 0) {
+            $prepaidSubscriptions = auth()->user()->account->prepaidSubscriptions->first();
+            if (! $prepaidSubscriptions ) {
                 return '';
             }
-            $timestamp = $subscriptions->data[0]['current_period_end'];
-
-            return DateHelper::getFullDate($timestamp);
+            return $prepaidSubscriptions->ends_at;
         });
     }
 

@@ -39,7 +39,7 @@
 
             <p>{{ trans('settings.subscriptions_account_current_paid_plan', ['name' => $planInformation['name']]) }}</p>
 
-            @if ($subscription->hasIncompletePayment())
+            @if (auth()->user()->account->hasIncompletePayment())
               @include('partials.subscription')
               @if (! app()->environment('production'))
               <p>
@@ -48,7 +48,7 @@
                   Force payment success (test).
                 </a>
               </p>
-              @endif          
+              @endif
             @else
 
             <p>{!! trans('settings.subscriptions_account_next_billing', ['date' => $nextBillingDate]) !!}</p>

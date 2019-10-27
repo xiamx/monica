@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Settings;
 
 use App\Helpers\DateHelper;
+use App\Models\Account\PrepaidSubscription;
+use DateTime;
 use Illuminate\Http\Request;
 use Laravel\Cashier\Cashier;
 use Laravel\Cashier\Payment;
@@ -12,6 +14,7 @@ use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
 use Stripe\PaymentIntent as StripePaymentIntent;
 use Laravel\Cashier\Exceptions\IncompletePayment;
+use Stripe\Stripe;
 
 class SubscriptionsController extends Controller
 {
@@ -33,21 +36,22 @@ class SubscriptionsController extends Controller
             ]);
         }
 
-        $planId = auth()->user()->account->getSubscribedPlanId();
         try {
             $nextBillingDate = auth()->user()->account->getNextBillingDate();
         } catch (StripeException $e) {
             $nextBillingDate = trans('app.unknown');
         }
 
-        $hasInvoices = auth()->user()->account->hasStripeId() && auth()->user()->account->hasInvoices();
+        $hasInvoices = auth()->user()->account->hasInvoices();
         $invoices = null;
         if ($hasInvoices) {
             $invoices = auth()->user()->account->invoices();
         }
 
+        $planInfo = InstanceHelper::getPlanInformationFromConfig(auth()->user()->account->getSubscribedPlanName());
+
         return view('settings.subscriptions.account', [
-            'planInformation' => InstanceHelper::getPlanInformationFromConfig($planId),
+            'planInformation' => $planInfo,
             'nextBillingDate' => $nextBillingDate,
             'subscription' => $subscription,
             'hasInvoices' => $hasInvoices,
@@ -100,6 +104,32 @@ class SubscriptionsController extends Controller
      */
     public function alipayCallback(Request $request)
     {
+
+        Stripe::setApiKey(getenv('STRIPE_SECRET'));
+        $sourceId = $request->query('source');
+        $plan = $request->query('plan');
+        if (! $sourceId || ! $plan) {
+            abort(403);
+        }
+        if ($plan == 'annual') {
+            $rate = 1645;
+        } elseif ($plan == 'monthly') {
+            $rate = 224;
+        }
+        $charge = \Stripe\Charge::create([
+            'amount' => $rate,
+            'currency' => 'cad',
+            'source' => $sourceId,
+        ]);
+
+        $prepaidSub = new PrepaidSubscription();
+        $prepaidSub->account_id = auth()->user()->account_id;
+        $prepaidSub->name = $plan;
+        $ends_at = new DateTime();
+        $ends_at->modify( '+1 year');
+        $prepaidSub->ends_at = $ends_at;
+        $prepaidSub->save();
+
         return view('settings.subscriptions.success');
     }
 

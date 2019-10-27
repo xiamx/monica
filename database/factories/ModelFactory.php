@@ -600,6 +600,19 @@ $factory->define(\Laravel\Cashier\Subscription::class, function (Faker\Generator
     ];
 });
 
+$factory->define(App\Models\Account\PrepaidSubscription::class, function (Faker\Generator $faker) {
+    static $account_id;
+    static $name;
+    static $ends_at;
+
+    return [
+        'account_id' => $account_id,
+        'name' => $name ?: $faker->randomElement(['main']),
+        'created_at' => now(),
+        'ends_at' => $ends_at
+    ];
+});
+
 $factory->define(App\Models\Account\Weather::class, function (Faker\Generator $faker) {
     return [
         'account_id' => factory(App\Models\Account\Account::class)->create()->id,

@@ -3,6 +3,7 @@
 namespace App\Models\Account;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class PrepaidSubscription extends Model
 {

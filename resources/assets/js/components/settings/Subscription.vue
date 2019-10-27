@@ -50,7 +50,10 @@
           支付宝
         </button>
       </div>
-      <img :src="paymentQRUrl" />
+      <div v-if="paymentQRUrl">
+        <p>请使用微信扫码支付</p>
+        <img class="mx-auto d-block" :src="paymentQRUrl" />
+      </div>
       <a v-if="paymentProcessed" :href="callback"
          class="btn btn-secondary w-100 tc"
       >
@@ -206,14 +209,13 @@ export default {
         type: 'alipay',
         amount: this.rate,
         redirect: {
-          return_url: 'http://localhost:8000/settings/subscriptions/upgrade/alipaycallback'
+          return_url: 'http://localhost:8000/settings/subscriptions/upgrade/alipaycallback?plan=' + this.plan
         },
         currency: 'cad'
       }).then(function(result) {
         console.log(result);
         var source = result.source;
         window.location.replace(source.redirect.url)
-        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url;
       });
     },
     wechatPayment() {

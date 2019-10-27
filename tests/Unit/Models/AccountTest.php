@@ -2,6 +2,7 @@
 
 namespace Tests\Unit\Models;
 
+use App\Models\Account\PrepaidSubscription;
 use Carbon\Carbon;
 use App\Models\User\User;
 use Tests\FeatureTestCase;
@@ -325,11 +326,10 @@ class AccountTest extends FeatureTestCase
     {
         $account = factory(Account::class)->create();
 
-        $plan = factory(\Laravel\Cashier\Subscription::class)->create([
+        $plan = factory(PrepaidSubscription::class)->create([
             'account_id' => $account->id,
-            'stripe_plan' => 'chandler_5',
-            'stripe_id' => 'sub_C0R444pbxddhW7',
             'name' => 'fakePlan',
+            'ends_at' => Date('y:m:d', strtotime('+3 days'))
         ]);
 
         config(['monica.paid_plan_monthly_friendly_name' => 'fakePlan']);
@@ -344,11 +344,10 @@ class AccountTest extends FeatureTestCase
     {
         $account = factory(Account::class)->create();
 
-        $plan = factory(\Laravel\Cashier\Subscription::class)->create([
+        $plan = factory(PrepaidSubscription::class)->create([
             'account_id' => $account->id,
-            'stripe_plan' => 'chandler_annual',
-            'stripe_id' => 'sub_C0R444pbxddhW7',
-            'name' => 'annualPlan',
+            'name' => 'fakePlan',
+            'ends_at' => Date('y:m:d', strtotime('+3 days'))
         ]);
 
         config(['monica.paid_plan_annual_friendly_name' => 'annualPlan']);
@@ -417,11 +416,10 @@ class AccountTest extends FeatureTestCase
     {
         $account = factory(Account::class)->create();
 
-        $plan = factory(\Laravel\Cashier\Subscription::class)->create([
+        $plan = factory(PrepaidSubscription::class)->create([
             'account_id' => $account->id,
-            'stripe_plan' => 'chandler_5',
-            'stripe_id' => 'sub_C0R444pbxddhW7',
             'name' => 'fakePlan',
+            'ends_at' => Date('y:m:d', strtotime('+3 days'))
         ]);
 
         $this->assertTrue($account->hasInvoices());
@@ -471,54 +469,6 @@ class AccountTest extends FeatureTestCase
         $this->assertEquals(
             3,
             $account->getRemindersForMonth(2)->count()
-        );
-    }
-
-    public function test_it_gets_the_id_of_the_subscribed_plan()
-    {
-        config([
-            'monica.paid_plan_annual_friendly_name' => 'fakePlan',
-            'monica.paid_plan_annual_id' => 'chandler_5',
-        ]);
-
-        $user = $this->signIn();
-
-        $account = $user->account;
-
-        $plan = factory(\Laravel\Cashier\Subscription::class)->create([
-            'account_id' => $account->id,
-            'stripe_plan' => 'chandler_5',
-            'stripe_id' => 'sub_C0R444pbxddhW7',
-            'name' => 'fakePlan',
-        ]);
-
-        $this->assertEquals(
-            'chandler_5',
-            $account->getSubscribedPlanId()
-        );
-    }
-
-    public function test_it_gets_the_friendly_name_of_the_subscribed_plan()
-    {
-        config([
-            'monica.paid_plan_annual_friendly_name' => 'fakePlan',
-            'monica.paid_plan_annual_id' => 'chandler_5',
-        ]);
-
-        $user = $this->signIn();
-
-        $account = $user->account;
-
-        $plan = factory(\Laravel\Cashier\Subscription::class)->create([
-            'account_id' => $account->id,
-            'stripe_plan' => 'chandler_5',
-            'stripe_id' => 'sub_C0R444pbxddhW7',
-            'name' => 'fakePlan',
-        ]);
-
-        $this->assertEquals(
-            'fakePlan',
-            $account->getSubscribedPlanName()
         );
     }
 
