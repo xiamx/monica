@@ -77,7 +77,7 @@ return [
     'breadcrumb_settings_export' => '导出',
     'breadcrumb_settings_users' => '用户',
     'breadcrumb_settings_users_add' => '添加用户',
-    'breadcrumb_settings_subscriptions' => '订阅',
+    'breadcrumb_settings_subscriptions' => '大会员',
     'breadcrumb_settings_import' => '导入',
     'breadcrumb_settings_import_report' => '导入报表',
     'breadcrumb_settings_import_upload' => '上传',

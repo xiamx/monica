@@ -52,7 +52,6 @@
             @else
 
             <p>{!! trans('settings.subscriptions_account_next_billing', ['date' => $nextBillingDate]) !!}</p>
-            <p>{!! trans('settings.subscriptions_account_cancel', ['url' => route('settings.subscriptions.downgrade')]) !!}</p>
 
             {{-- Only display invoices if the subscription exists or existed --}}
             @if ($hasInvoices)
