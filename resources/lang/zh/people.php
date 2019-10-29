@@ -79,11 +79,11 @@ return [
     'set_favorite' => '您收藏的联系人将在联系人列表置顶显示。',
 
     // Stay in touch
-    'stay_in_touch' => '常联系*',
+    'stay_in_touch' => '提醒我与Ta常联系*',
     'stay_in_touch_frequency' => '常联系*提醒频率：每天|常联系*提醒频率：每 {count} 天',
     'stay_in_touch_invalid' => '频率必须大于0。',
     'stay_in_touch_premium' => '您需要升级到高级账户来使用这个功能！',
-    'stay_in_touch_modal_title' => '常联系*',
+    'stay_in_touch_modal_title' => '提醒我与Ta常联系*',
     'stay_in_touch_modal_desc' => '我们将会用邮件提醒您与{firstname}保持联系。',
     'stay_in_touch_modal_label' => '每几天发送一封提醒邮件...？',
 
