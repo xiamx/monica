@@ -451,7 +451,7 @@ return [
     'personalization_life_event_type_new_instrument' => '新乐器',
     'personalization_life_event_type_new_language' => '新语言',
     'personalization_life_event_type_tattoo_or_piercing' => '纹身或耳洞',
-    'personalization_life_event_type_new_license' => '新驾照',
+    'personalization_life_event_type_new_license' => '新执照',
     'personalization_life_event_type_travel' => '旅行',
     'personalization_life_event_type_achievement_or_award' => '成就或奖项',
     'personalization_life_event_type_changed_beliefs' => '改变信仰',
@@ -459,9 +459,9 @@ return [
     'personalization_life_event_type_first_kiss' => '初吻',
 
     'storage_title' => '存储空间',
-    'storage_account_info' => '您的账户容量: :accountLimit Mb /  您目前已使用: :currentAccountSize Mb (:percentUsage%)',
-    'storage_upgrade_notice' => '升级您的帐户, 以便上传文档和照片。',
-    'storage_description' => '在这里, 您可以看到上传的有关您的联系人的所有文档和照片。',
+    'storage_account_info' => '您的账户容量: :accountLimit Mb /  已使用: :currentAccountSize Mb (:percentUsage%)',
+    'storage_upgrade_notice' => '上传文档和照片为付费功能，可在升级帐户后享用。',
+    'storage_description' => '您可以在此看到上传过的所有文档和照片。',
 
     'dav_title' => 'WebDAV',
     'dav_description' => '在这里, 您可以找到所有设置, 以便为 Carddav 和 CalDAV 导出使用 webdav 资源。',
