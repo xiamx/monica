@@ -99,7 +99,9 @@ trait Subscription
      */
     public function hasInvoices()
     {
-        return $this->prepaidSubscriptions()->count() > 0;
+        // TODO: fix invoices generations
+        return false;
+        // return $this->prepaidSubscriptions()->count() > 0;
     }
 
     public function invoices() {
