@@ -15,12 +15,12 @@ return [
     |
     */
 
-    'short_date_year_time' => 'Y M d H:i',
-    'short_date_year' => 'Y M d',
-    'short_date' => 'M d',
+    'short_date_year_time' => 'Y 年 M d 日 H:i',
+    'short_date_year' => 'Y 年 M d 日',
+    'short_date' => 'M d 日',
     'short_month' => 'M',
-    'short_month_year' => 'Y M',
-    'short_day' => 'D',
+    'short_month_year' => 'Y 年 M',
+    'short_day' => 'D 日',
     'full_date_year' => 'Y F d',
     'full_month' => 'F',
     'full_month_year' => 'Y F',
