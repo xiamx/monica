@@ -7,7 +7,7 @@ return [
     'save' => '保存',
     'add' => '添加',
     'cancel' => '取消',
-    'delete_confirm' => '您确定吗？',
+    'delete_confirm' => '确定删除吗？',
     'delete' => '删除',
     'edit' => '编辑',
     'upload' => '上传',
@@ -39,9 +39,9 @@ return [
     'retry' => '重试',
     'go_back' => '后退',
 
-    'application_title' => 'Monica – 您的私人社交关系管家',
-    'application_description' => 'Monica是用来收集并管理您与亲朋好友之间的关系的得力助手。',
-    'application_og_title' => '促进你们之间的感情。一个免费且开源的面向亲朋好友的CRM工具',
+    'application_title' => '常联系 PRM – 你的专属友情备忘录',
+    'application_description' => '常联系 PRM 是用来收集并管理您与亲朋好友之间的关系的备忘录。',
+    'application_og_title' => '常联系 PRM 是用来收集并管理您与亲朋好友之间的关系的备忘录。',
 
     'markdown_description' => '想用一种美观的方式格式化文本吗？我们以Markdown语法支持粗体、斜体、列表等样式。',
     'markdown_link' => '阅读文档',

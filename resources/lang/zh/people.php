@@ -346,7 +346,7 @@ return [
     'introductions_update_success' => '你成功更新了关于你们相识的故事',
     'introductions_met_through' => '通过 <a href=":url">:name</a>遇到',
     'introductions_met_date' => '在:date遇到',
-    'introductions_reminder_title' => '你第一次遇见的那一天的周年纪念日',
+    'introductions_reminder_title' => '你们遇见那一天的周年纪念日',
 
     // Deceased
     'deceased_reminder_title' => ':name的去世周年怀念',
