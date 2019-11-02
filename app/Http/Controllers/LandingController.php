@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Account\Account;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
 class LandingController extends Controller
 {
     /*

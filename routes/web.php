@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/landing', 'LandingController@index')->name('index');
-Route::get('/', 'Auth\LoginController@showLoginOrRegister')->name('login');
+Route::get('/', 'LandingController@index')->name('index');
+//Route::get('/', 'Auth\LoginController@showLoginOrRegister')->name('login');
 
 Auth::routes(['verify' => true]);
 

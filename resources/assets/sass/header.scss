@@ -64,11 +64,14 @@
   text-decoration: none;
 
   &:hover {
-    background-color: #497193;
+    background-color: #fffbf2;
+    color: #000;
     border-radius: 3px;
-    color: #fff;
     padding: 3px 11px;
     text-decoration: none;
+    svg {
+      filter: invert(90%);
+    }
   }
 
   svg {
@@ -78,8 +81,8 @@
 }
 
 .header-search-input {
-  background: #497193;
-  border-color: #497193;
+  background: #2d2c2c;
+  border-color: #2d2c2c;
   color: white;
 
   &::placeholder {

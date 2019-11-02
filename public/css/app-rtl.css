@@ -20484,11 +20484,16 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^=col-]:last-
 }
 
 .header-nav-item-link:hover {
-  background-color: #497193;
+  background-color: #fffbf2;
+  color: #000;
   border-radius: 3px;
-  color: #fff;
   padding: 3px 11px;
   text-decoration: none;
+}
+
+.header-nav-item-link:hover svg {
+  -webkit-filter: invert(90%);
+          filter: invert(90%);
 }
 
 .header-nav-item-link svg {
@@ -20497,8 +20502,8 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^=col-]:last-
 }
 
 .header-search-input {
-  background: #497193;
-  border-color: #497193;
+  background: #2d2c2c;
+  border-color: #2d2c2c;
   color: white;
 }
 
@@ -21398,7 +21403,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^=col-]:last-
 }
 
 .marketing.register .signup-box {
-  background-color: #fff;
+  background-color: #fffbf2;
   border: 1px solid #e4edf5;
   border-radius: 5px;
   padding: 50px 20px 20px;
@@ -21884,7 +21889,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^=col-]:last-
 }
 
 .bg-blue-monica {
-  background-color: #000;
+  background-color: #1d1c1c;
 }
 
 .b--gray-monica {
@@ -22214,7 +22219,7 @@ input:disabled {
 }
 
 .breadcrumb {
-  background-color: #f9f9fb;
+  background-color: #fffbf2;
 }
 
 .breadcrumb ul {
@@ -22416,7 +22421,7 @@ svg {
   vertical-align: baseline !important;
 }
 
-.br-3 {
+.br3 {
   border-radius: 0;
 }
 

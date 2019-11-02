@@ -32,7 +32,7 @@
           <div class="signup-box">
             <div class="dt w-100">
               <div class="dtc tc">
-                <img src="img/monica.svg" width="97" height="88" alt="">
+                <img src="img/logo.png" width="88" height="88" alt="">
               </div>
             </div>
             @if($first)

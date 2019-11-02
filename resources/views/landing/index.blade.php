@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ \App::getLocale() }}" dir="{{ htmldir() }}">
+<html lang="zh" dir="{{ htmldir() }}">
   <head>
     <base href="{{ url('/') }}/" />
     <meta charset="utf-8">
@@ -15,9 +15,7 @@
     <script>
       window.Laravel = {!! \Safe\json_encode([
           'locale' => \App::getLocale(),
-          'htmldir' => htmldir(),
-          'profileDefaultView' => auth()->user()->profile_active_tab,
-          'timezone' => auth()->user()->timezone,
+          'htmldir' => htmldir()
       ]); !!}
     </script>
   </head>
