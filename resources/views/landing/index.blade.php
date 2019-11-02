@@ -268,34 +268,8 @@
 
     <div class="mw8 center ph3 mb4">
   <div class="cf">
-    <div class="fl w-25-ns w-100">
-      <p class="fw5 mt0">Features</p>
-      <ul class="pl0 list">
-        <li class="mb2 f6"><a href="https://www.monicahq.com/features" class="muted-link no-underline">Contact management</a></li>
-        <li class="mb2 f6"><a href="https://www.monicahq.com/features/dashboard" class="muted-link no-underline">Powerful dashboard</a></li>
-        <li class="mb2 f6"><a href="https://www.monicahq.com/features/journal" class="muted-link no-underline">Journal</a></li>
-      </ul>
-    </div>
-    <div class="fl w-25-ns w-100">
-      <p class="fw5 mt0">Company</p>
-      <ul class="pl0 list">
-        <li class="mb2 f6"><a href="https://www.monicahq.com/team" class="muted-link no-underline">Team</a></li>
-        <li class="mb2 f6"><a href="https://www.monicahq.com/blog" class="muted-link no-underline">Blog</a></li>
-        <li class="mb2 f6"><a href="https://tinyletter.com/monicahq" class="muted-link no-underline">Newsletter</a></li>
-      </ul>
-    </div>
-    <div class="fl w-25-ns w-100">
-      <p class="fw5 mt0">Resources</p>
-      <ul class="pl0 list">
-        <li class="mb2 f6"><a href="https://www.monicahq.com/terms" class="muted-link no-underline">Terms</a></li>
-        <li class="mb2 f6"><a href="https://www.monicahq.com/privacy" class="muted-link no-underline">Privacy</a></li>
-        <li class="mb2 f6">
-          <a href="javascript:location='mailto:\u0072\u0065\u0067\u0069\u0073\u0040\u006d\u006f\u006e\u0069\u0063\u0061\u0068\u0071\u002e\u0063\u006f\u006d';void 0" class="muted-link no-underline">Contact</a></li>
-      </ul>
-    </div>
     <div class="fl w-25-ns w-100 tc tl-ns">
-      <img src="https://www.monicahq.com/img/logo_vertical.png" class="mw-none" style="width: 130px;">
-      <p class="mt2 f6">© 2019</p>
+      <p class="mt2 f6">Entreprise R&D Meng Xuan Xia © 2019</p>
     </div>
   </div>
 </div>
