@@ -26,14 +26,14 @@
   <div class="cf">
     <nav class="dt w-100 mw9 center">
       <div class="dtc w2 v-mid pt3 pb3">
-        <a href="https://www.monicahq.com" class="db">
+        <a href="/landing" class="db">
           
-          <img src="https://www.monicahq.com/img/logo_vertical.png" class="mw-none" style="width: 150px;">
+          <img src="/img/logo_vertical.png" class="mw-none" style="width: 150px;">
         </a>
       </div>
       <div class="dtc v-mid tr pa3">
-        <a class="f6 fw4 dib ml2 pv2 ph3 secondary-button br3" href="https://app.monicahq.com/login" >登陆</a>
-        <a class="f6 fw4 dib ml2 pv2 ph3 secondary-button br3" href="https://app.monicahq.com/register" >新用户注册</a>
+        <a class="f6 fw4 dib ml2 pv2 ph3 secondary-button br3" href="/login" >登陆</a>
+        <a class="f6 fw4 dib ml2 pv2 ph3 secondary-button br3" href="/register" >新用户注册</a>
       </div>
     </nav>
   </div>
@@ -44,12 +44,11 @@
   <div class="cf">
     <div class="fl w-100 tc mb5">
       <h1 class="f2 normal lh-copy">你的专属友情备忘录</h1>
-      <h2 class="normal lh-copy">常联系 PRM 一句话的介绍</h2>
-      <p class="lh-copy">这里加一个链接到公众号软文</p>
+      <h2 class="normal lh-copy">常联系 PRM 是一款个人关系管理系统，你可以用它来记录和亲朋好友互动中的美好瞬间。</h2>
     </div>
 
     <div class="fl w-100 tc mb5">
-      <a href="https://app.monicahq.com/register" class="primary-button br3 pv3 ph4 mb2 dib fw5">免费注册</a>
+      <a href="/register" class="primary-button br3 pv3 ph4 mb2 dib fw5">免费注册</a>
     </div>
   </div>
 </div>
@@ -136,9 +135,9 @@
 <div class="mw8 center ph3">
   <div class="cf mb6-ns mb2">
     <div class="fl w-50-ns w-100 pl5-ns mb3 mb0-ns">
-      <h2 class="normal">选个标题摘要核心价值</h2>
-      <p class="measure lh-copy">第一段话讲友情</p>
-      <p class="measure lh-copy">第二段话留给爷爷奶奶</p>
+      <h2 class="normal">2019 年我们竟然要用软件管理个人关系</h2>
+      <p class="measure lh-copy">2019 年，你在刷微信，但你又有多久没和好朋友见面了？如果你已经要等一个朋友和自己都用空又有心情的日子，那估计你想看的电影都已经下架了。那些能和朋友约到一起的时间是宝贵又奢侈的。</p>
+      <p class="measure lh-copy">常联系PRM陪你一起记录珍贵的时刻。</p>
     </div>
     <div class="fl w-50-ns w-100 tc">
     <img src="https://via.placeholder.com/180x251"/>
@@ -149,118 +148,35 @@
     <img src="https://via.placeholder.com/355x325"/>
     </div>
     <div class="fl w-50-ns w-100 pr4-ns">
-      <h2 class="normal">选个标题介绍主要功能</h2>
-      <h3>留给副标题</h3>
-      <p class="measure lh-copy">功能摘要，下面的列表是明细</p>
+      <h2 class="normal">核心功能</h2>
+      <h3>写日记、朋友圈也挺好的，为什么要用常联系PRM？强在信息的汇总。</h3>
+      <p class="measure lh-copy">你可以在常联系PRM 上快速记录并快速回忆亲朋好友的：</p>
       <div class="flex">
         <div>
           <ul class="list ml0 pl0">
             <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Information about family
+            家庭与工作信息
             </li>
             <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Work information
+            和其他人的关系
             </li>
             <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Relation between contacts
+            一起分享的喜怒哀乐
             </li>
             <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Pets
-            </li>
-            <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Activites done together
-            </li>
-            <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Reminders about important dates
+            重要节日提醒
             </li>
           </ul>
         </div>
         <div class="ml4">
           <ul class="list pl0">
-            <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Gift ideas or gifts you've made
-            </li>
-            <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Tasks
-            </li>
-            <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Debts you owe or owned
-            </li>
-            <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Journal
-            </li>
-            <li class="mb2">
-              <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mr2">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
-                  <polyline id="Path-2" stroke="#3CB370" points="0.16015625 5.54980469 4.38964844 9.68847656 13.7080078 1.00585938"></polyline>
-                </g>
-              </svg>
-              Indicate how your day went
-            </li>
+            <li class="mb2">礼物点子</li>
+            <li class="mb2">承诺过的事情</li>
+            <li class="mb2">收到的礼物，欠下的债务</li>
           </ul>
         </div>
       </div>
+      <p class="measure lh-copy">最重要的是，常联系PRM是完全私密的，你记下的内容只有你一个人可以看到。</p>
     </div>
   </div>
 </div>
@@ -276,6 +192,9 @@
 
     <!-- <script src="/js/app.js"></script> -->
     <style>
+    body {
+      background-color: #fffbf2;
+    }
     .primary-button {
     background-color: 
 #3cb371;
