@@ -2,7 +2,7 @@
 </style>
 
 <template>
-  <div class="br3 ba b--gray-monica bg-white mb3">
+  <div class="br3 ba b--gray-monica mb3">
     <notifications group="main" position="bottom right" width="400" />
 
     <div class="pa3 bb b--gray-monica tc">

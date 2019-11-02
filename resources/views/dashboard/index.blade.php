@@ -32,7 +32,7 @@
     <section class="ph3 ph5-ns cf w-100 bg-gray-monica">
       <div class="mw9 center">
         <div class="{{ htmldir() == 'ltr' ? 'fl' : 'fr' }} w-50-ns w-100 pa2">
-          <div class="br3 ba b--gray-monica bg-white mb4">
+          <div class="ba b--gray-monica mb4">
             <div class="pa3 bb b--gray-monica">
               <p class="mb0">
                 📅
@@ -47,7 +47,7 @@
         <div class="{{ htmldir() == 'ltr' ? 'fl' : 'fr' }} w-50-ns w-100 pa2">
           <dashboard-log :default-active-tab="'{!! auth()->user()->dashboard_active_tab !!}'"></dashboard-log>
 
-          <div class="br3 ba b--gray-monica bg-white mb3">
+          <div class="br3 ba b--gray-monica mb3">
             <div class="pa3 bb b--gray-monica tc">
               <ul>
                 <li class="tc dib fl w-third">
@@ -66,7 +66,7 @@
             </div>
           </div>
 
-          <div class="br3 ba b--gray-monica bg-white mb3">
+          <div class="br3 ba b--gray-monica mb3">
             <div class="pa3 bb b--gray-monica">
               <p class="mb1 b">☀️ {{ trans('dashboard.product_changes') }} <span class="fr normal"><a href="changelog">{{ trans('dashboard.product_view_details') }}</a></span></p>
               <ul>

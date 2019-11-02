@@ -47,11 +47,14 @@ $bg-hover-monica: #fffbf2;
 }
 
 .bg-blue-monica {
-  background-color: #325776;
+  background-color: #000;
 }
 
 .b--gray-monica {
-  border-color: #fffbf2;
+  border-color: #000;
+  // border-radius: 0px;
+  // border-width: 2px;
+  // border-style: solid;
 }
 
 .bg-hover-monica {
@@ -593,4 +596,8 @@ footer {
 // Fix svg alignment
 svg {
   vertical-align: baseline !important;
+}
+
+.br-3 {
+  border-radius: 0;
 }
