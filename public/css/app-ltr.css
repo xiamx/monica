@@ -21880,11 +21880,11 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^=col-]:last-
 }
 
 .bg-blue-monica {
-  background-color: #325776;
+  background-color: #000;
 }
 
 .b--gray-monica {
-  border-color: #fffbf2;
+  border-color: #000;
 }
 
 .bg-hover-monica:hover {
@@ -22409,5 +22409,9 @@ footer .show-version .note li {
 
 svg {
   vertical-align: baseline !important;
+}
+
+.br-3 {
+  border-radius: 0;
 }
 
