@@ -24,7 +24,7 @@
   <div class="cf">
     <nav class="dt w-100 mw9 center">
       <div class="dtc w2 v-mid pt3 pb3">
-        <a href="/landing" class="db">
+        <a href="/" class="db">
           
           <img src="/img/logo_vertical.png" class="mw-none" style="width: 150px;">
         </a>
@@ -134,7 +134,9 @@
   <div class="cf mb6-ns mb2">
     <div class="fl w-50-ns w-100 pl5-ns mb3 mb0-ns">
       <h2 class="normal">2019 年我们竟然要用软件管理个人关系</h2>
-      <p class="measure lh-copy">2019 年，你在刷微信，但你又有多久没和好朋友见面了？如果你已经要等一个朋友和自己都有空又有心情的日子，那估计你想看的电影都已经下架了。那些能和朋友约到一起的时间是宝贵又奢侈的。</p>
+      <p class="measure lh-copy">
+        2019 年，你在刷微信，但是你又有多久没和好朋友见面了？
+        想要一起聚餐？那你得等到你们都有空有心情的时候，一拖再拖。</p>
       <p class="measure lh-copy">常联系PRM陪你一起记录珍贵的时刻。</p>
     </div>
     <div class="fl w-50-ns w-100 tc">
