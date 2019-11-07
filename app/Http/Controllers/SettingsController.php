@@ -89,13 +89,13 @@ class SettingsController
     {
         // names order
         $namesOrder = [
-            'firstname_lastname',
             'lastname_firstname',
-            'firstname_lastname_nickname',
-            'firstname_nickname_lastname',
             'lastname_firstname_nickname',
             'lastname_nickname_firstname',
             'nickname',
+            'firstname_lastname',
+            'firstname_lastname_nickname',
+            'firstname_nickname_lastname',
         ];
 
         return view('settings.index')

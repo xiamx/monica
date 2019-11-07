@@ -142,7 +142,7 @@ class Contact extends Model
      *
      * @var string
      */
-    protected $nameOrder = 'firstname_lastname';
+    protected $nameOrder = 'lastname_firstname';
 
     /**
      * Get Searchable Fields.
