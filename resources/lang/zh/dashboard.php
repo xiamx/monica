@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'dashboard_blank_title' => '欢迎登录账号',
-    'dashboard_blank_description' => 'Monica是一个记录你所有关心的人及与其交互信息的地方',
-    'dashboard_blank_cta' => '添加您的第一个联系人',
+    'dashboard_blank_title' => '欢迎登录',
+    'dashboard_blank_description' => '常联系 PRM 是一款个人关系管理系统，你可以用它来记录和亲朋好友互动中的美好瞬间。',
+    'dashboard_blank_cta' => '添加你的第一个联系人',
     'dashboard_blank_illustration' => '插画： <a href=":url">Freepik</a>',
 
     'notes_title' => '您还没有任何便签。',
