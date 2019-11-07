@@ -16,16 +16,16 @@
                   </svg>
                 </span>
                 {{ trans('auth.change_language_title') }}
-            </li>
-            @foreach($locales as $locale)
-              <li>
-                @if (App::isLocale($locale['lang']))
-                  {{ $locale['lang'] }}
-                @else
-                <a href="{{ route('register') }}?lang={{ $locale['lang'] }}" title="{{ trans('auth.change_language', ['lang' => $locale['name']]) }}">{{ $locale['lang'] }}</a>
-                @endif
               </li>
-            @endforeach
+              @foreach($locales as $locale)
+                <li>
+                  @if (App::isLocale($locale['lang']))
+                    {{ $locale['lang'] }}
+                  @else
+                    <a href="{{ route('register') }}?lang={{ $locale['lang'] }}" title="{{ trans('auth.change_language', ['lang' => $locale['name']]) }}">{{ $locale['lang'] }}</a>
+                  @endif
+                </li>
+              @endforeach
             </ul>
           </div>
 
@@ -87,7 +87,7 @@
               <div class="form-check">
                 <label class="form-check-label">
                   <input class="form-check-input" id="policy" name="policy" type="checkbox" value="policy">
-                  {!! trans('auth.register_policy', ['url' => 'https://monicahq.com/privacy', 'urlterm' => 'https://monicahq.com/terms', 'hreflang' => 'en', ]) !!}
+                  {!! trans('auth.register_policy', ['url' => '/privacy', 'urlterm' => '/terms', 'hreflang' => 'en', ]) !!}
                 </label>
               </div>
 
