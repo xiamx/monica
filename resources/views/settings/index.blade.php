@@ -47,13 +47,13 @@
 
               {{-- names --}}
               <div class="form-group">
-                <label for="first_name">{{ trans('settings.firstname') }}</label>
-                <input type="text" class="form-control" name="first_name" id="first_name" required value="{{ auth()->user()->first_name }}">
+                <label for="last_name">{{ trans('settings.lastname') }}</label>
+                <input type="text" class="form-control" name="last_name" id="last_name" required value="{{ auth()->user()->last_name }}">
               </div>
 
               <div class="form-group">
-                <label for="last_name">{{ trans('settings.lastname') }}</label>
-                <input type="text" class="form-control" name="last_name" id="last_name" required value="{{ auth()->user()->last_name }}">
+                <label for="first_name">{{ trans('settings.firstname') }}</label>
+                <input type="text" class="form-control" name="first_name" id="first_name" required value="{{ auth()->user()->first_name }}">
               </div>
 
               {{-- email address --}}
