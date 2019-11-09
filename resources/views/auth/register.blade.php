@@ -61,14 +61,14 @@
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <div class="form-group">
-                    <label for="first_name">{{ trans('auth.register_firstname') }}</label>
-                    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="{{ trans('auth.register_firstname_example') }}" value="{{ old('first_name') }}">
+                    <label for="last_name">{{ trans('auth.register_lastname') }}</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="{{ trans('auth.register_lastname_example') }}" value="{{ old('last_name') }}">
                   </div>
                 </div>
                 <div class="col-12 col-sm-6">
                   <div class="form-group">
-                    <label for="last_name">{{ trans('auth.register_lastname') }}</label>
-                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="{{ trans('auth.register_lastname_example') }}" value="{{ old('last_name') }}">
+                    <label for="first_name">{{ trans('auth.register_firstname') }}</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="{{ trans('auth.register_firstname_example') }}" value="{{ old('first_name') }}">
                   </div>
                 </div>
               </div>
