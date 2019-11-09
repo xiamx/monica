@@ -39,8 +39,8 @@ return [
     'retry' => 'Riprova',
     'go_back' => 'Torna indietro',
 
-    'application_title' => 'Monica – personal relationship manager',
-    'application_description' => 'Monica è uno strumento per gestire le interazioni con i vostri cari, amici e familiari.',
+    'application_title' => 'ClxPRM – personal relationship manager',
+    'application_description' => 'ClxPRM è uno strumento per gestire le interazioni con i vostri cari, amici e familiari.',
     'application_og_title' => 'Avere migliori relazioni con i vostri cari. CRM Online gratuito per gli amici e la famiglia.',
 
     'markdown_description' => 'Vuoi formattare il tuo testo? Supportiamo Markdown per grassetto, corsivo, liste, e altro ancora.',
@@ -62,12 +62,12 @@ return [
     'footer_privacy' => 'Privacy',
     'footer_release' => 'Note di rilascio',
     'footer_newsletter' => 'Newsletter',
-    'footer_source_code' => 'Monica su GitHub',
+    'footer_source_code' => 'ClxPRM su GitHub',
     'footer_version' => 'Versione: :version',
     'footer_new_version' => 'È disponibile una nuova versione',
 
     'footer_modal_version_whats_new' => 'Novità',
-    'footer_modal_version_release_away' => 'La tua versione è 1 versione indietro rispetto all\'ultima disponibile. Dovresti aggiornare Monica.|La tua versione è :number versioni indietro rispetto all\'ultima disponibile. Dovresti aggiornare Monica.',
+    'footer_modal_version_release_away' => 'La tua versione è 1 versione indietro rispetto all\'ultima disponibile. Dovresti aggiornare ClxPRM.|La tua versione è :number versioni indietro rispetto all\'ultima disponibile. Dovresti aggiornare ClxPRM.',
 
     'breadcrumb_dashboard' => 'Home',
     'breadcrumb_list_contacts' => 'Lista dei contatti',

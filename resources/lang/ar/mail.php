@@ -23,7 +23,7 @@ return [
     'notifications_footer' => 'إذا كنتَ تواجه مشكلة في الضغط على زر ":actionText"، انسخ والصق العنوان في متصفح الويب الخاص بك: [:actionURL](:actionURL)',
     'notifications_rights' => 'جميع الحقوق محفوظة',
 
-    'confirmation_email_title' => 'Monica - تأكيد البريد الإلكتروني',
+    'confirmation_email_title' => 'ClxPRM - تأكيد البريد الإلكتروني',
     'confirmation_email_intro'=> 'لتأكيد بريدك اضغط على الزر أدناه',
     'confirmation_email_button' => 'قم بتأكيد عنوان بريدك',
 ];

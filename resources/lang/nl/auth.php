@@ -53,9 +53,9 @@ return [
     'password_reset_action' => 'Wachtwoord resetten',
     'password_reset_email_content' => 'Klik hier om je wachtwoord te resetten:',
 
-    'register_title_welcome' => 'Welkom bij je nieuwe Monica installatie',
-    'register_create_account' => 'Je moet een account aanmaken om Monica te kunnen gebruiken',
-    'register_title_create' => 'Maak jouw Monica account aan',
+    'register_title_welcome' => 'Welkom bij je nieuwe ClxPRM installatie',
+    'register_create_account' => 'Je moet een account aanmaken om ClxPRM te kunnen gebruiken',
+    'register_title_create' => 'Maak jouw ClxPRM account aan',
     'register_login' => '<a href=":url">Inloggen</a> als je al een account hebt.',
     'register_email' => 'Voor een geldig e-mailadres in',
     'register_email_example' => 'jij@jouwdomein',

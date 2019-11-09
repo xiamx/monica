@@ -23,7 +23,7 @@ return [
     'notifications_footer' => 'If you’re having trouble clicking the ":actionText" button, copy and paste the URL below into your web browser: [:actionURL](:actionURL)',
     'notifications_rights' => 'All rights reserved',
 
-    'confirmation_email_title' => 'Monica – Email verification',
+    'confirmation_email_title' => 'ClxPRM – Email verification',
     'confirmation_email_intro'=> 'Para validar tu email haz click en el botón de abajo',
     'confirmation_email_button' => 'Verificar la dirección de correo electrónico',
 ];

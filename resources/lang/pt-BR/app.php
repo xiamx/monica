@@ -39,8 +39,8 @@ return [
     'retry' => 'Retry',
     'go_back' => 'Go back',
 
-    'application_title' => 'Monica – personal relationship manager',
-    'application_description' => 'Monica é uma ferramenta para gerenciar suas interações com seus amigos, familiares e pessoas queridas.',
+    'application_title' => 'ClxPRM – personal relationship manager',
+    'application_description' => 'ClxPRM é uma ferramenta para gerenciar suas interações com seus amigos, familiares e pessoas queridas.',
     'application_og_title' => 'Have better relations with your loved ones. Free Online CRM for friends and family.',
 
     'markdown_description' => 'Want to format your text in a nice way? We support Markdown to add bold, italic, lists and more.',

@@ -39,8 +39,8 @@ return [
     'retry' => 'Retry',
     'go_back' => 'Go back',
 
-    'application_title' => 'Monica (مونيكا) – مدير العلاقات الشخصية',
-    'application_description' => 'Monica هو أداة لإدارة تفاعلاتك مع أحبائك، أصدقائك و عائلتك.',
+    'application_title' => 'ClxPRM (مونيكا) – مدير العلاقات الشخصية',
+    'application_description' => 'ClxPRM هو أداة لإدارة تفاعلاتك مع أحبائك، أصدقائك و عائلتك.',
     'application_og_title' => 'امتلك علاقات أفضل مع أحبائك. مدير علاقات مجاني على الويب للعائلة و الأصدقاء.',
 
     'markdown_description' => 'هل تريد تنسيق النص الخاص بك بطريقة لطيفة؟ نحن ندعم التحديد و إضافة السماكة، و الإمالة و القوائم و المزيد.',

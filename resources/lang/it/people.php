@@ -200,7 +200,7 @@ return [
     'reminders_type_month' => 'mese',
     'reminders_type_year' => 'anno',
     'reminders_birthday' => 'Compleanno di :name',
-    'reminders_free_plan_warning' => 'Nella versione gratuita di Monica non vengono inviate email. Per ricevere promemoria via email, effettua l\'upgrade.',
+    'reminders_free_plan_warning' => 'Nella versione gratuita di ClxPRM non vengono inviate email. Per ricevere promemoria via email, effettua l\'upgrade.',
 
     // relationships
     'relationship_form_add' => 'Aggiungi relazione',

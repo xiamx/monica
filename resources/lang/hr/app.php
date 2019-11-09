@@ -39,8 +39,8 @@ return [
     'retry' => 'Retry',
     'go_back' => 'Go back',
 
-    'application_title' => 'Monica – upravljanje osobnim odnosima',
-    'application_description' => 'Monica is a tool to manage your interactions with your loved ones, friends and family.',
+    'application_title' => 'ClxPRM – upravljanje osobnim odnosima',
+    'application_description' => 'ClxPRM is a tool to manage your interactions with your loved ones, friends and family.',
     'application_og_title' => 'Have better relations with your loved ones. Free Online CRM for friends and family.',
 
     'markdown_description' => 'Want to format your text in a nice way? We support Markdown to add bold, italic, lists and more.',

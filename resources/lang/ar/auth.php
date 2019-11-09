@@ -53,9 +53,9 @@ return [
     'password_reset_action' => 'إعادة تعيين كلمة المرور',
     'password_reset_email_content' => 'اضغط هنا لإعادة تعيين كلمة مرورك:',
 
-    'register_title_welcome' => 'مرحبا بك في تطبيق Monica المثبت حديثاً',
-    'register_create_account' => 'يجب أن تنشئ حساباً لتستخدم Monica',
-    'register_title_create' => 'انشئ حسابك لـMonica',
+    'register_title_welcome' => 'مرحبا بك في تطبيق ClxPRM المثبت حديثاً',
+    'register_create_account' => 'يجب أن تنشئ حساباً لتستخدم ClxPRM',
+    'register_title_create' => 'انشئ حسابك لـClxPRM',
     'register_login' => 'قم بـ <a href=":url">تسجيل الدخول</a> إذا كان لديك حساب مسبقاً.',
     'register_email' => 'أدخل عنوان بريد صالح',
     'register_email_example' => 'example@example.com',

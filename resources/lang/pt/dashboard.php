@@ -2,7 +2,7 @@
 
 return [
     'dashboard_blank_title' => 'Seja bem-vindo à sua conta!',
-    'dashboard_blank_description' => 'Com Monica pode organizar todas as suas interações com as pessoas que são importantes para si.',
+    'dashboard_blank_description' => 'Com ClxPRM pode organizar todas as suas interações com as pessoas que são importantes para si.',
     'dashboard_blank_cta' => 'Adicione o seu primeiro contacto',
     'dashboard_blank_illustration' => 'Illustration by <a href=":url">Freepik</a>',
 

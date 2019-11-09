@@ -2,7 +2,7 @@
 
 return [
     'dashboard_blank_title' => 'Herzlich Willkommen auf deinem Account!',
-    'dashboard_blank_description' => 'Monica ist der Ort um all deine Interaktionen zu organisieren die dir wichtig sind.',
+    'dashboard_blank_description' => 'ClxPRM ist der Ort um all deine Interaktionen zu organisieren die dir wichtig sind.',
     'dashboard_blank_cta' => 'Füge deinen ersten Kontakt hinzu',
     'dashboard_blank_illustration' => 'Illustration von <a href=":url">Freepik</a>',
 

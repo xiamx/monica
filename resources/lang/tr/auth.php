@@ -53,9 +53,9 @@ return [
     'password_reset_action' => 'Şifreyi Sıfırla',
     'password_reset_email_content' => 'Şifrenizi sıfırlamak için buraya tıklayın:',
 
-    'register_title_welcome' => 'Yeni yüklenen Monica örneğinize hoş geldiniz',
-    'register_create_account' => 'Monica\'yı kullanmak için bir hesap oluşturmanız gerekir',
-    'register_title_create' => 'Monica hesabınızı oluşturun',
+    'register_title_welcome' => 'Yeni yüklenen ClxPRM örneğinize hoş geldiniz',
+    'register_create_account' => 'ClxPRM\'yı kullanmak için bir hesap oluşturmanız gerekir',
+    'register_title_create' => 'ClxPRM hesabınızı oluşturun',
     'register_login' => 'Zaten bir hesabınız varsa <a href=":url">Giriş Yapın</a>.',
     'register_email' => 'Geçerli bir e-posta adresi girin',
     'register_email_example' => 'mail@mail',

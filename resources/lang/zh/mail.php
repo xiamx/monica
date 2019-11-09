@@ -23,7 +23,7 @@ return [
     'notifications_footer' => '如果您无法点击 ":actionText" 按钮, 复制以下链接至浏览器打开: [:actionURL](:actionURL)',
     'notifications_rights' => '版权所有',
 
-    'confirmation_email_title' => 'Monica – Email 认证',
+    'confirmation_email_title' => 'ClxPRM – Email 认证',
     'confirmation_email_intro'=> '请点击以下按钮来完成Email认证',
     'confirmation_email_button' => 'Email 认证',
 ];

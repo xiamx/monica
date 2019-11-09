@@ -39,8 +39,8 @@ return [
     'retry' => 'Reintentar',
     'go_back' => 'Go back',
 
-    'application_title' => 'Monica – gestor de relaciones personales',
-    'application_description' => 'Monica es una herramienta para gestionar las interacciones con sus seres queridos, amigos y familiares.',
+    'application_title' => 'ClxPRM – gestor de relaciones personales',
+    'application_description' => 'ClxPRM es una herramienta para gestionar las interacciones con sus seres queridos, amigos y familiares.',
     'application_og_title' => 'Ten mejores relaciones con tus seres queridos. CRM gratis en línea para amigos y familiares.',
 
     'markdown_description' => '¿Desea dar formato a su texto de una manera agradable? Soportamos el uso de Markdown para añadir negrita, cursiva, listas y más.',

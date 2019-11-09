@@ -54,7 +54,7 @@ return [
     'password_reset_email_content' => '单击此处来重置密码:',
 
     'register_title_welcome' => '欢迎注册常联系',
-    'register_create_account' => '您需要一个账号来使用Monica',
+    'register_create_account' => '您需要一个账号来使用ClxPRM',
     'register_title_create' => '创建你的账号',
     'register_login' => '已经有账号了？<a href=":url">点此登录</a>',
     'register_email' => '请输入你的邮箱',

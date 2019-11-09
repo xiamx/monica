@@ -16,7 +16,7 @@ return [
     'export_title' => 'Exporteer je accountgegevens',
     'export_be_patient' => 'Klik op de knop om het exporteren te starten. Het kan enige minuten duren om de export te verwerken - Wees alsjeblieft geduldig en klik niet meerdere malen op de knop.',
     'export_title_sql' => 'Exporteer naar SQL',
-    'export_sql_explanation' => 'Het exporteren van je gegevens in SQL formaat maakt het mogelijk om je gegevens te importeren in je eigen Monica installatie. Dit is alleen waardevol als je een eigen server hebt.',
+    'export_sql_explanation' => 'Het exporteren van je gegevens in SQL formaat maakt het mogelijk om je gegevens te importeren in je eigen ClxPRM installatie. Dit is alleen waardevol als je een eigen server hebt.',
     'export_sql_cta' => 'Exporteer naar SQL',
     'export_sql_link_instructions' => 'Opmerking: <a href=":url"> lees de instructies</a> om meer te weten te komen over het importeren van dit bestand in je eigen installatie.',
 
@@ -174,8 +174,8 @@ return [
     'subscriptions_account_free_plan_benefits_import_data_vcard' => 'Importeer contacten via vCard',
     'subscriptions_account_free_plan_benefits_support' => 'Je ondersteunt het project op de lange termijn, zodat we meer fantastische functionaliteiten toe kunnen voegen.',
     'subscriptions_account_upgrade' => 'Account upgraden',
-    'subscriptions_account_upgrade_title' => 'Upgrade Monica vandaag en maak je persoonlijke relaties betekenisvoller.',
-    'subscriptions_account_upgrade_choice' => 'Kies hieronder een abonnement en sluit je aan bij meer dan :customers personen die reeds de premium versie van Monica gebruiken.',
+    'subscriptions_account_upgrade_title' => 'Upgrade ClxPRM vandaag en maak je persoonlijke relaties betekenisvoller.',
+    'subscriptions_account_upgrade_choice' => 'Kies hieronder een abonnement en sluit je aan bij meer dan :customers personen die reeds de premium versie van ClxPRM gebruiken.',
     'subscriptions_account_invoices' => 'Facturen',
     'subscriptions_account_invoices_download' => 'Download',
     'subscriptions_account_invoices_subscription' => 'Subscription from :startDate to :endDate',
@@ -228,11 +228,11 @@ return [
     'subscriptions_plan_include3' => '100% van de inkomsten gaan naar de ontwikkeling van dit fantastische open source project.',
     'subscriptions_help_title' => 'Extra details waar je wellicht interesse in hebt',
     'subscriptions_help_opensource_title' => 'Wat is een open source project?',
-    'subscriptions_help_opensource_desc' => 'Monica is een open source project. Dat betekend dat het volledig wordt gebouwd door een welwillende groep mensen die slechts een geweldige applicatie willen maken voor het algemeen belang. Open source betekend dat de code vrij beschikbaar is op Github, iederheen het kan inspecteren, het kan aanpassen of het kan verbeteren. Al het geld dat wij binnenkrijgen is bedoeld om betere functionaliteiten te ontwikkelen, krachtigere servers in te kunnen zetten en het helpt om de rekeningen te betalen. Bedankt voor je hulp. We zouden het letterlijk niet zonder jou kunnen doen.',
+    'subscriptions_help_opensource_desc' => 'ClxPRM is een open source project. Dat betekend dat het volledig wordt gebouwd door een welwillende groep mensen die slechts een geweldige applicatie willen maken voor het algemeen belang. Open source betekend dat de code vrij beschikbaar is op Github, iederheen het kan inspecteren, het kan aanpassen of het kan verbeteren. Al het geld dat wij binnenkrijgen is bedoeld om betere functionaliteiten te ontwikkelen, krachtigere servers in te kunnen zetten en het helpt om de rekeningen te betalen. Bedankt voor je hulp. We zouden het letterlijk niet zonder jou kunnen doen.',
     'subscriptions_help_limits_title' => 'Is er bij het gratis abonnement een beperking op het aantal contacten dat je kan hebben?',
     'subscriptions_help_limits_plan' => 'Ja. Een gratis abonnement stelt je in staat om :number contacten te beheren.',
     'subscriptions_help_discounts_title' => 'Zijn er kortingen voor non-profitorganisaties en onderwijs?',
-    'subscriptions_help_discounts_desc' => 'Jazeker! Monica is gratis voor studenten en goede doelen. Neem contact op met <a href=":support">support</a> met een passend bewijs (van inschrijving) en wij zullen deze speciale status aan je account toekennen.',
+    'subscriptions_help_discounts_desc' => 'Jazeker! ClxPRM is gratis voor studenten en goede doelen. Neem contact op met <a href=":support">support</a> met een passend bewijs (van inschrijving) en wij zullen deze speciale status aan je account toekennen.',
     'subscriptions_help_change_title' => 'Wat als ik van gedachten verander?',
     'subscriptions_help_change_desc' => 'Je kan op elk moment volledig zelfstandig opzeggen, zonder verdere voorwaarden. Er is geen noodzaak om contact te zoeken met support. Je lopende abonnementsperiode kan echter niet terugbetaald worden.',
 
@@ -291,7 +291,7 @@ return [
     'tags_blank_description' => 'Labels werken als mappen maar je kan meer dan één label aan een contact toevoegen. Open een contact en label een vriend direct onder de naam. Zodra een contact is gelabeld kun je hier al jouw labels beheren.',
 
     'api_title' => 'API-toegang',
-    'api_description' => 'De API kan worden gebruikt om de gegevens van Monica te gebruiken in een externe applicatie. Bijvoorbeeld een app op je mobiele telefoon.',
+    'api_description' => 'De API kan worden gebruikt om de gegevens van ClxPRM te gebruiken in een externe applicatie. Bijvoorbeeld een app op je mobiele telefoon.',
 
     'api_personal_access_tokens' => 'Persoonlijke toegangscodes',
     'api_pao_description' => 'Zorg dat je deze code alleen toevertrouwt aan een bron die je vertrouwd gezien deze code toegang geeft tot al jouw gegevens.',
@@ -326,7 +326,7 @@ return [
 
     'personalization_tab_title' => 'Personaliseer je account',
 
-    'personalization_title' => 'Hier vind je verschillende instellingen voor je account. Deze functies zijn gericht op ervaren gebruikers die maximale controle over Monica willen hebben.',
+    'personalization_title' => 'Hier vind je verschillende instellingen voor je account. Deze functies zijn gericht op ervaren gebruikers die maximale controle over ClxPRM willen hebben.',
     'personalization_contact_field_type_title' => 'Contactvelden',
     'personalization_contact_field_type_add' => 'Nieuw type contactveld toevoegen',
     'personalization_contact_field_type_description' => 'Hier kun je alle verschillende soorten contactvelden configureren. Als er bijvoorbeeld in de toekomst een nieuw sociaal netwerk ontstaat kun je dat hier toevoegen.',

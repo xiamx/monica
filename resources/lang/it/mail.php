@@ -23,7 +23,7 @@ return [
     'notifications_footer' => 'Se hai problemi nel cliccare sul bottone ":actionText", copia e incolla il seguente indirizzo direttamente nel tuo browser web: [:actionURL](:actionURL)',
     'notifications_rights' => 'Tutti i diritti riservati',
 
-    'confirmation_email_title' => 'Monica – Verifica Email',
+    'confirmation_email_title' => 'ClxPRM – Verifica Email',
     'confirmation_email_intro'=> 'Per verificare il tuo indirizzo email clicca il bottone qui sotto',
     'confirmation_email_button' => 'Verifica indirizzo email',
 ];

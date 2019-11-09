@@ -53,8 +53,8 @@ return [
     'password_reset_action' => 'Redefinir senha',
     'password_reset_email_content' => 'Clique aqui para redefinir sua senha:',
 
-    'register_title_welcome' => 'Bem-vindo à sua instância Monica recém instalada',
-    'register_create_account' => 'Você precisa criar uma conta para usar Monica',
+    'register_title_welcome' => 'Bem-vindo à sua instância ClxPRM recém instalada',
+    'register_create_account' => 'Você precisa criar uma conta para usar ClxPRM',
     'register_title_create' => 'Crie sua Conta',
     'register_login' => '<a href=":url">Log in</a> if you already have an account.',
     'register_email' => 'Enter a valid email address',

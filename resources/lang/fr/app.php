@@ -39,8 +39,8 @@ return [
     'retry' => 'Réessayer',
     'go_back' => 'Revenir en arrière',
 
-    'application_title' => 'Monica – gestionnaire de relations personnelles',
-    'application_description' => 'Monica est un outil pour gérer vos interactions avec vos proches, vos amis et votre famille.',
+    'application_title' => 'ClxPRM – gestionnaire de relations personnelles',
+    'application_description' => 'ClxPRM est un outil pour gérer vos interactions avec vos proches, vos amis et votre famille.',
     'application_og_title' => 'Ayez de meilleures relations avec vos proches. GRC gratuit en ligne pour les amis et la famille.',
 
     'markdown_description' => 'Souhaitez-vous formatter votre texte d’une belle manière ? Nous supportons le format Markdown pour ajouter du gras, italique, des listes et plus encore.',

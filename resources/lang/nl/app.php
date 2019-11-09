@@ -39,8 +39,8 @@ return [
     'retry' => 'Opnieuw Proberen',
     'go_back' => 'Go back',
 
-    'application_title' => 'Monica – persoonlijke relatie manager',
-    'application_description' => 'Monica is een app voor het beheren van interacties met uw geliefden, vrienden en familie.',
+    'application_title' => 'ClxPRM – persoonlijke relatie manager',
+    'application_description' => 'ClxPRM is een app voor het beheren van interacties met uw geliefden, vrienden en familie.',
     'application_og_title' => 'Bouw betere relaties met uw dierbaren. Gratis Online CRM voor vrienden en familie.',
 
     'markdown_description' => 'Wilt u uw tekst opmaken op een leuke manier? Wij ondersteunen Markdown om vet, cursief, lijsten en meer toe te voegen.',

@@ -23,7 +23,7 @@ return [
     'notifications_footer' => 'Als de ":actionText" knop niet werkt, kopieer en plak de onderstaande URL in uw webbrowser: [:actionURL](:actionURL)',
     'notifications_rights' => 'Alle rechten voorbehouden',
 
-    'confirmation_email_title' => 'Monica – E-mail verificatie',
+    'confirmation_email_title' => 'ClxPRM – E-mail verificatie',
     'confirmation_email_intro'=> 'Voor het valideren van uw email, klik op de knop hieronder',
     'confirmation_email_button' => 'Verifieer het e-mailadres',
 ];

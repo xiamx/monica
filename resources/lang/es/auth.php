@@ -53,9 +53,9 @@ return [
     'password_reset_action' => 'Restablecer contraseña',
     'password_reset_email_content' => 'Haz clic aquí para restablecer tu contraseña:',
 
-    'register_title_welcome' => 'Bienvenido a tu nueva instancia de Monica',
-    'register_create_account' => 'Debes crear una cuenta para usar Monica',
-    'register_title_create' => 'Crea tu cuenta de Monica',
+    'register_title_welcome' => 'Bienvenido a tu nueva instancia de ClxPRM',
+    'register_create_account' => 'Debes crear una cuenta para usar ClxPRM',
+    'register_title_create' => 'Crea tu cuenta de ClxPRM',
     'register_login' => '<a href=":url">Inicia sesión</a> si ya tienes una cuenta.',
     'register_email' => 'Introduzca una dirección de correo electrónico válida',
     'register_email_example' => 'you@home',

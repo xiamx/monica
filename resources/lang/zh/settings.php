@@ -16,7 +16,7 @@ return [
     'export_title' => '导出帐户数据',
     'export_be_patient' => '单击按钮开始导出。处理导出可能需要几分钟时间，请耐心等待, 不要取消按钮。',
     'export_title_sql' => '导出到 SQL',
-    'export_sql_explanation' => '以 SQL 格式导出数据使您可以将数据导入到自己的Monica实例中。这只在你有自己的服务器时有效。',
+    'export_sql_explanation' => '以 SQL 格式导出数据使您可以将数据导入到自己的ClxPRM实例中。这只在你有自己的服务器时有效。',
     'export_sql_cta' => '导出到 SQL',
     'export_sql_link_instructions' => '注意: <a href=":url">阅读说明</a>, 了解有关将此文件导入到您的实例的详细信息。',
 
@@ -174,7 +174,7 @@ return [
     'subscriptions_account_free_plan_benefits_import_data_vcard' => '从 vCard 文件导入联系人',
     'subscriptions_account_free_plan_benefits_support' => '支持项目的长久运行, 使我们可以引入更多的功能。',
     'subscriptions_account_upgrade' => '更新您的账户',
-    'subscriptions_account_upgrade_title' => '立即升级您的Monica账户吧！',
+    'subscriptions_account_upgrade_title' => '立即升级您的ClxPRM账户吧！',
     'subscriptions_account_upgrade_choice' => '在下方选择一个大会员付费方式（已有 :customers 购买了大会员）',
     'subscriptions_account_invoices' => '发票',
     'subscriptions_account_invoices_download' => '下载',
@@ -191,7 +191,7 @@ return [
     'subscriptions_downgrade_rule_contacts_constraint' => '您当前有 <a href=":url">1 位联系人</a>。|当前有 <a href=":url">:count 位联系人</a>。',
     'subscriptions_downgrade_cta' => '降级',
     'subscriptions_downgrade_success' => '您已降级到免费版！',
-    'subscriptions_downgrade_thanks' => '非常感谢您尝试过高级版订阅。我们一直为Monica不断地增加新的功能-, 期待您的再次订阅。',
+    'subscriptions_downgrade_thanks' => '非常感谢您尝试过高级版订阅。我们一直为ClxPRM不断地增加新的功能-, 期待您的再次订阅。',
     'subscriptions_back' => '返回设置',
     'subscriptions_upgrade_title' => '升级您的帐户',
     'subscriptions_upgrade_choose' => '您选择了:plan',
@@ -228,11 +228,11 @@ return [
     'subscriptions_plan_include3' => '收入的100% 用于此项目的开发。',
     'subscriptions_help_title' => '您可能还关心',
     'subscriptions_help_opensource_title' => '什么是开源项目？',
-    'subscriptions_help_opensource_desc' => 'Monica是一个开源项目，这意味着它是由社区建造的项目。开源意味着代码在 GitHub 上公开提供, 每个人都可以检查并修改它。我们筹集的所有资金都致力于建立更好的功能, 拥有更强大的服务器, 帮助支付账单。没有您的支持，我们将无法完成这一切。',
+    'subscriptions_help_opensource_desc' => 'ClxPRM是一个开源项目，这意味着它是由社区建造的项目。开源意味着代码在 GitHub 上公开提供, 每个人都可以检查并修改它。我们筹集的所有资金都致力于建立更好的功能, 拥有更强大的服务器, 帮助支付账单。没有您的支持，我们将无法完成这一切。',
     'subscriptions_help_limits_title' => '你们对免费版的联系人有限制吗？',
     'subscriptions_help_limits_plan' => '是的。免费版您能拥有:number位联系人。',
     'subscriptions_help_discounts_title' => '你们对非盈利机构和学生有优惠吗？',
-    'subscriptions_help_discounts_desc' => '当然！Monica免费为学生，非盈利机构提供服务。您只需要提交一下材料给我们的 <a href=":support">支持人员</a>。',
+    'subscriptions_help_discounts_desc' => '当然！ClxPRM免费为学生，非盈利机构提供服务。您只需要提交一下材料给我们的 <a href=":support">支持人员</a>。',
     'subscriptions_help_change_title' => '如果我改变主意怎么办？',
     'subscriptions_help_change_desc' => '您可以随时取消您的订阅。但是，目前为止我们无法提供退款服务。',
 
@@ -291,7 +291,7 @@ return [
     'tags_blank_description' => '标签的工作方式类似于文件夹, 但可以向联系人添加多个标签。转到联系人并在名字的下面标记一个朋友,。一旦联系人被标记, 请返回此处管理帐户中的所有标签。',
 
     'api_title' => 'API 访问',
-    'api_description' => 'API 可以用来从外部应用程序操纵Monica的数据, 例如移动应用程序。',
+    'api_description' => 'API 可以用来从外部应用程序操纵ClxPRM的数据, 例如移动应用程序。',
 
     'api_personal_access_tokens' => '个人访问令牌',
     'api_pao_description' => '请确保将此token授予您信任的源-因为它们允许您访问所有数据。',
@@ -326,7 +326,7 @@ return [
 
     'personalization_tab_title' => '个性化您的帐户',
 
-    'personalization_title' => '在这里您可以找到不同的设置来配置您的帐户。这些功能更多的是针对想最大化控制Monica "高级用户"所设置。',
+    'personalization_title' => '在这里您可以找到不同的设置来配置您的帐户。这些功能更多的是针对想最大化控制ClxPRM "高级用户"所设置。',
     'personalization_contact_field_type_title' => '联系人字段类型',
     'personalization_contact_field_type_add' => '添加新字段类型',
     'personalization_contact_field_type_description' => '在这里您可以配置所有不同类型的联系人字段, 您可以关联到所有联系人。如果将来出现新的社交网络, 您将能够在这里添加这种新的联系方式。',

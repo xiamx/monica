@@ -2,7 +2,7 @@
 
 return [
     'dashboard_blank_title' => 'Hesabınıza hoş geldiniz!',
-    'dashboard_blank_description' => 'Monica is the place to organize all the interactions you have with the ones you care about.',
+    'dashboard_blank_description' => 'ClxPRM is the place to organize all the interactions you have with the ones you care about.',
     'dashboard_blank_cta' => 'İlk bağlantınızı ekleyin',
     'dashboard_blank_illustration' => 'Illustration by <a href=":url">Freepik</a>',
 

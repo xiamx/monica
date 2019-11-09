@@ -16,7 +16,7 @@ return [
     'export_title' => 'Exportiere die Daten deines Kontos',
     'export_be_patient' => 'Button klicken um den Export zu starten. Dies kann mehrere Minuten dauern – sei bitte geduldig und klicke nicht mehrfach auf den Button.',
     'export_title_sql' => 'Nach SQL exportieren',
-    'export_sql_explanation' => 'Der SQL-Export ermöglicht es dir deine Daten in einer eigenen monica-Installation zu importieren. Dies ist nur sinnvoll, wenn du einen eigenen Server besitzt.',
+    'export_sql_explanation' => 'Der SQL-Export ermöglicht es dir deine Daten in einer eigenen ClxPRM-Installation zu importieren. Dies ist nur sinnvoll, wenn du einen eigenen Server besitzt.',
     'export_sql_cta' => 'SQL exportieren',
     'export_sql_link_instructions' => 'Hinweis: <a href=":url">lies die Anleitung</a> um mehr über das Importieren in die eigene Installation zu erfahren.',
 
@@ -174,8 +174,8 @@ return [
     'subscriptions_account_free_plan_benefits_import_data_vcard' => 'Importiere Kontakte über vCards',
     'subscriptions_account_free_plan_benefits_support' => 'Du unterstützt das Projekt auf lange Sicht, so dass wir mehr großartige Features umsetzen können.',
     'subscriptions_account_upgrade' => 'Konto upgraden',
-    'subscriptions_account_upgrade_title' => 'Upgrade Monica heute und mache deine persönlichen Beziehungen gehaltvoller.',
-    'subscriptions_account_upgrade_choice' => 'Wähle eines der Abos und schließe dich :customers Personen an, die bereits die Premium-Version von Monica nutzen.',
+    'subscriptions_account_upgrade_title' => 'Upgrade ClxPRM heute und mache deine persönlichen Beziehungen gehaltvoller.',
+    'subscriptions_account_upgrade_choice' => 'Wähle eines der Abos und schließe dich :customers Personen an, die bereits die Premium-Version von ClxPRM nutzen.',
     'subscriptions_account_invoices' => 'Rechnungen',
     'subscriptions_account_invoices_download' => 'Herunterladen',
     'subscriptions_account_invoices_subscription' => 'Subscription from :startDate to :endDate',
@@ -228,11 +228,11 @@ return [
     'subscriptions_plan_include3' => '100% der Einnahmen fließen in die Entwicklung dieses großartigen Open-Source-Projektes.',
     'subscriptions_help_title' => 'Weitere Details, die dich interessieren könnten',
     'subscriptions_help_opensource_title' => 'Was ist ein Open-Source-Projekt?',
-    'subscriptions_help_opensource_desc' => 'Monica is an open source project. This means it is built by an entirely benevolent community who just wants to provide a great tool for the greater good. Being open source means the code is publicly available on GitHub, and everyone can inspect it, modify it or enhance it. All the money we raise is dedicated to build better features, have more powerful servers, help pay the bills. Thanks for your help. We couldn’t do it without you – literally.',
+    'subscriptions_help_opensource_desc' => 'ClxPRM is an open source project. This means it is built by an entirely benevolent community who just wants to provide a great tool for the greater good. Being open source means the code is publicly available on GitHub, and everyone can inspect it, modify it or enhance it. All the money we raise is dedicated to build better features, have more powerful servers, help pay the bills. Thanks for your help. We couldn’t do it without you – literally.',
     'subscriptions_help_limits_title' => 'Gibt es im kostenlosen Abo eine Begrenzung bei der Anzahl an Kontakten, die man haben kann?',
     'subscriptions_help_limits_plan' => 'Yes. Free plans let you manage :number contacts.',
     'subscriptions_help_discounts_title' => 'Gibt es Ermäßigungen für gemeinnützige Organisationen und Bildungseinrichtungen?',
-    'subscriptions_help_discounts_desc' => 'Ja! Monica ist kostenlos für Schüler, Studenten und gemeinnützige Organisationen. Kontaktiere einfach <a href=":support">den Support</a> mit einem entsprechenden Nachweis und wir werden den speziellen Status auf deinen Account anwenden.',
+    'subscriptions_help_discounts_desc' => 'Ja! ClxPRM ist kostenlos für Schüler, Studenten und gemeinnützige Organisationen. Kontaktiere einfach <a href=":support">den Support</a> mit einem entsprechenden Nachweis und wir werden den speziellen Status auf deinen Account anwenden.',
     'subscriptions_help_change_title' => 'Was passiert, wenn ich meine Meinung ändere?',
     'subscriptions_help_change_desc' => 'Du kannst jederzeit ohne weiteres selber kündigen, du musst dazu auch nicht den Support oder sonst wen kontaktieren. Laufende Abos werden jedoch nicht zurück erstattet.',
 
@@ -291,7 +291,7 @@ return [
     'tags_blank_description' => 'Tags funktionieren wie Ordner, wobei ein Kontakt auch mehrere Tags erhalten kann. Öffne einen Kontakt und tagge einen Freund direkt unter dem Namen. So bald dein Kontakt getaggt ist, kannst du hier deine Tags verwalten.',
 
     'api_title' => 'API Zugriff',
-    'api_description' => 'Über die API ist es möglich, Monica über eine externe Applikation zu nutzen, wie z.B. eine App auf deinem Handy.',
+    'api_description' => 'Über die API ist es möglich, ClxPRM über eine externe Applikation zu nutzen, wie z.B. eine App auf deinem Handy.',
 
     'api_personal_access_tokens' => 'Persönliche Zugangscodes',
     'api_pao_description' => 'Stelle sicher, dass du dieses Token nur an Quellen gibst, denen du vertraust, denn es erlaubt den Zugriff auf all deine Daten.',
@@ -326,7 +326,7 @@ return [
 
     'personalization_tab_title' => 'Personalisiere deine Konto',
 
-    'personalization_title' => 'Hier findest du verschiedene Einstellungsoptionen für deinen Account. Diese Funktionen sind eher für erfahrene Nutzer gedacht, die maximale Kontrolle über Monica möchten.',
+    'personalization_title' => 'Hier findest du verschiedene Einstellungsoptionen für deinen Account. Diese Funktionen sind eher für erfahrene Nutzer gedacht, die maximale Kontrolle über ClxPRM möchten.',
     'personalization_contact_field_type_title' => 'Kontaktfelder',
     'personalization_contact_field_type_add' => 'Neues Feld hinzufügen',
     'personalization_contact_field_type_description' => 'Hier kannst du Kontaktfelder verwalten, um z.b. verschiedene Soziale Netzwerke hinzuzufügen.',
