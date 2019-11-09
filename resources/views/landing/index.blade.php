@@ -31,7 +31,7 @@
       </div>
       <div class="dtc v-mid tr pa3">
         <a class="f6 fw4 dib ml2 pv2 ph3 secondary-button br3" href="/login" >登陆</a>
-        <a class="f6 fw4 dib ml2 pv2 ph3 secondary-button br3" href="/register" >新用户注册</a>
+        <a class="f6 fw4 dib ml2 pv2 ph3 secondary-button br3" href="/register?lang=zh" >新用户注册</a>
       </div>
     </nav>
   </div>
