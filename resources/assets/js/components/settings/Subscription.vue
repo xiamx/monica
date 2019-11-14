@@ -91,6 +91,10 @@ export default {
       type: String,
       default: '',
     },
+    alipayCallback: {
+      type: String,
+      default: '',
+    },
     callback: {
       type: String,
       default: '',
@@ -209,7 +213,7 @@ export default {
         type: 'alipay',
         amount: this.rate,
         redirect: {
-          return_url: 'http://localhost:8000/settings/subscriptions/upgrade/alipaycallback?plan=' + this.plan
+          return_url: this.alipayCallback
         },
         currency: 'cad'
       }).then(function(result) {
