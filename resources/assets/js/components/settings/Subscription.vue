@@ -53,6 +53,7 @@
       <div v-if="paymentQRUrl">
         <p>请使用微信扫码支付</p>
         <img class="mx-auto d-block" :src="paymentQRUrl" />
+        <a :href="wechatCallback + '&source=' + wechatSource" class="mx-auto d-block f6 link dim ba ph3 pv2 mb2 dib black">在微信上完成支付后点我</a>
       </div>
       <a v-if="paymentProcessed" :href="callback"
          class="btn btn-secondary w-100 tc"
@@ -91,6 +92,10 @@ export default {
       type: String,
       default: '',
     },
+    wechatCallback: {
+      type: String,
+      default: '',
+    },
     alipayCallback: {
       type: String,
       default: '',
@@ -123,6 +128,7 @@ export default {
       paymentMethod: '',
       token: '',
       paymentQRUrl: '',
+      wechatSource: '',
       rate: 0,
       paymentProcessing: false,
       paymentProcessed: false,
@@ -234,12 +240,15 @@ export default {
         amount: this.rate,
         currency: 'cad'
       }).then(function(result) {
-        console.log(result);
-        var source = result.source;
-        self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url;
+        if (result.source) {
+          var source = result.source;
+          self.paymentQRUrl = 'http://qr.liantu.com/api.php?text=' + source.wechat.qr_code_url;
+          self.wechatSource = source.id;
+        } else {
+          throw new Error(result.e);
+        }
       });
     },
-
     confirmPayment() {
       var self = this;
 

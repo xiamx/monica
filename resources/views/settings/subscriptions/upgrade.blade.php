@@ -36,6 +36,7 @@
         :stripe-key="'{{ config('cashier.key') }}'"
         :plan="'{{ $planInformation['type'] }}'"
         :amount="'{{ $planInformation['friendlyPrice'] }}'"
+        :wechat-callback="'{{ config('app.url') . '/settings/subscriptions/upgrade/wechatcallback?plan=' . $planInformation['type'] }}'"
         :alipay-callback="'{{ config('app.url') . '/settings/subscriptions/upgrade/alipaycallback?plan=' . $planInformation['type'] }}'"
         :callback="'{{ route('settings.subscriptions.payment') }}'"
       ></stripe-subscription>

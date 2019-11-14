@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\App;
 use App\Http\Controllers\Controller;
 use Stripe\PaymentIntent as StripePaymentIntent;
 use Laravel\Cashier\Exceptions\IncompletePayment;
+use Stripe\Source;
 use Stripe\Stripe;
 
 class SubscriptionsController extends Controller
@@ -95,6 +96,45 @@ class SubscriptionsController extends Controller
             ),
             'redirect' => request('redirect'),
         ]);
+    }
+
+    /**
+     * Handle wechat callback
+     *
+     * @return \Illuminate\View\View|\Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse
+     */
+    public function wechatCallback(Request $request)
+    {
+
+        Stripe::setApiKey(getenv('STRIPE_SECRET'));
+        $sourceId = $request->query('source');
+        $source = Source::retrieve($sourceId);
+        if ($source['status'] == 'chargeable') {
+            $plan = $request->query('plan');
+            if (! $sourceId || ! $plan) {
+                abort(403);
+            }
+            if ($plan == 'annual') {
+                $rate = 1645;
+            } elseif ($plan == 'monthly') {
+                $rate = 224;
+            }
+            $charge = \Stripe\Charge::create([
+                'amount' => $rate,
+                'currency' => 'cad',
+                'source' => $sourceId,
+            ]);
+
+            $prepaidSub = new PrepaidSubscription();
+            $prepaidSub->account_id = auth()->user()->account_id;
+            $prepaidSub->name = $plan;
+            $ends_at = new DateTime();
+            $ends_at->modify( '+1 year');
+            $prepaidSub->ends_at = $ends_at;
+            $prepaidSub->save();
+
+            return view('settings.subscriptions.success');
+        }
     }
 
     /**
