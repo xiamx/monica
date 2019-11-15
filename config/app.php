@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Monica'),
+    'name' => env('APP_NAME', '常联系 ClxPRM'),
 
     /*
     |--------------------------------------------------------------------------
@@ -24,7 +24,7 @@ return [
     |
     */
 
-    'display_name' => env('APP_DISPLAY_NAME', env('APP_NAME', 'Monica')),
+    'display_name' => env('APP_DISPLAY_NAME', env('APP_NAME', '常联系 ClxPRM')),
 
     /*
     |--------------------------------------------------------------------------
