@@ -87,7 +87,7 @@
               <div class="form-check">
                 <label class="form-check-label">
                   <input class="form-check-input" id="policy" name="policy" type="checkbox" value="policy">
-                  {!! trans('auth.register_policy', ['url' => '/privacy', 'urlterm' => '/terms', 'hreflang' => 'en', ]) !!}
+                  {!! trans('auth.register_policy', ['url' => '/privacy', 'urlterm' => '/terms', 'hreflang' => 'zh', ]) !!}
                 </label>
               </div>
 

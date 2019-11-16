@@ -59,7 +59,7 @@
               </div>
 
               <div class="help">
-                  {!! trans('auth.register_policy', ['url' => 'https://monicahq.com/privacy', 'hreflang' => 'en']) !!}
+                  {!! trans('auth.register_policy', ['url' => 'https://clxprm.com/privacy', 'hreflang' => 'zh']) !!}
               </div>
 
             </form>
