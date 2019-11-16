@@ -149,9 +149,9 @@ export default {
     start() {
       this.paymentQRUrl = '';
       if (this.plan === 'annual') {
-        this.rate = 1645;
+        this.rate = 1039;
       } else if (this.plan === 'monthly') {
-        this.rate = 224;
+        this.rate = 113;
       }
       this.stripe = Stripe(this.stripeKey);
     },

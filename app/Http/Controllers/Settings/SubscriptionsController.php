@@ -115,9 +115,9 @@ class SubscriptionsController extends Controller
                 abort(403);
             }
             if ($plan == 'annual') {
-                $rate = 1645;
+                $rate = 1039;
             } elseif ($plan == 'monthly') {
-                $rate = 224;
+                $rate = 113;
             }
             $charge = \Stripe\Charge::create([
                 'amount' => $rate,
@@ -152,9 +152,9 @@ class SubscriptionsController extends Controller
             abort(403);
         }
         if ($plan == 'annual') {
-            $rate = 1645;
+            $rate = 1039;
         } elseif ($plan == 'monthly') {
-            $rate = 224;
+            $rate = 113;
         }
         $charge = \Stripe\Charge::create([
             'amount' => $rate,
