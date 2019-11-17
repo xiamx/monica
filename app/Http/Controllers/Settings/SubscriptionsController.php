@@ -144,7 +144,6 @@ class SubscriptionsController extends Controller
      */
     public function alipayCallback(Request $request)
     {
-
         Stripe::setApiKey(getenv('STRIPE_SECRET'));
         $sourceId = $request->query('source');
         $plan = $request->query('plan');
