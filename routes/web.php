@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/debug-sentry', function () {
+    throw new Exception('My first Sentry error!');
+});
 Route::get('/', 'LandingController@index')->name('index');
 Route::get('/privacy', 'PrivacyController@index')->name('index');
 Route::get('/terms', 'TermsController@index')->name('index');
