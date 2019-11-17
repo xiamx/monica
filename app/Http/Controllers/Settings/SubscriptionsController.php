@@ -106,9 +106,9 @@ class SubscriptionsController extends Controller
     public function wechatCallback(Request $request)
     {
 
-        Stripe::setApiKey(getenv('STRIPE_SECRET'));
+        Stripe::setApiKey(config('services.stripe.secret'));
         $sourceId = $request->query('source');
-        $source = Source::retrieve($sourceId);
+        $source = \Stripe\Source::retrieve($sourceId);
         if ($source['status'] == 'chargeable') {
             $plan = $request->query('plan');
             if (! $sourceId || ! $plan) {
@@ -144,7 +144,7 @@ class SubscriptionsController extends Controller
      */
     public function alipayCallback(Request $request)
     {
-        Stripe::setApiKey(getenv('STRIPE_SECRET'));
+        Stripe::setApiKey(config('services.stripe.secret'));
         $sourceId = $request->query('source');
         $plan = $request->query('plan');
         if (! $sourceId || ! $plan) {
