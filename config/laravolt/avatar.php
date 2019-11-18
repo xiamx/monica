@@ -22,7 +22,7 @@ return [
     'generator' => \Laravolt\Avatar\Generator\DefaultGenerator::class,
 
     // Whether all characters supplied must be replaced with their closest ASCII counterparts
-    'ascii'    => true,
+    'ascii'    => false,
 
     // Image shape: circle or square
     'shape' => 'square',
@@ -34,17 +34,17 @@ return [
     'height'   => 150,
 
     // Number of characters used as initials. If name consists of single word, the first N character will be used
-    'chars'    => 2,
+    'chars'    => 3,
 
     // font size
-    'fontSize' => 48,
+    'fontSize' => 38,
 
     // convert initial letter in uppercase
     'uppercase' => false,
 
     // Fonts used to render text.
     // If contains more than one fonts, randomly selected based on name supplied
-    'fonts'    => [__DIR__.'/../../vendor/laravolt/avatar/fonts/OpenSans-Bold.ttf'],
+    'fonts'    => [__DIR__.'/../../public/fonts/NotoSansCJK-Regular.ttc'],
 
     // List of foreground colors to be used, randomly selected based on name supplied
     'foregrounds'   => [
