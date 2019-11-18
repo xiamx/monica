@@ -53,7 +53,7 @@
       <div v-if="paymentQRUrl">
         <p>请使用微信扫码支付</p>
         <img class="mx-auto d-block" :src="paymentQRUrl" />
-        <a :href="wechatCallback + '&source=' + wechatSource" class="mx-auto d-block f6 link dim ba ph3 pv2 mb2 dib black">在微信上完成支付后点我</a>
+        <a :href="wechatCallback + '&source=' + wechatSource" class="btn btn-primary w-100 mt3">在微信上完成支付后点我</a>
       </div>
       <a v-if="paymentProcessed" :href="callback"
          class="btn btn-secondary w-100 tc"
