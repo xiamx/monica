@@ -596,6 +596,28 @@ class Contact extends Model
     }
 
     /**
+     * Check if string is Chinese or Japanese or Korean
+     *
+     * @param $string string input string
+     * @return bool
+     */
+    private function isCjk($string) {
+        return $this->isChinese($string) || $this->isJapanese($string) || $this->isKorean($string);
+    }
+
+    private function isChinese($string) {
+        return preg_match("/\p{Han}+/u", $string);
+    }
+
+    private function isJapanese($string) {
+        return preg_match('/[\x{4E00}-\x{9FBF}\x{3040}-\x{309F}\x{30A0}-\x{30FF}]/u', $string);
+    }
+
+    private function isKorean($string) {
+        return preg_match('/[\x{3130}-\x{318F}\x{AC00}-\x{D7AF}]/u', $string);
+    }
+
+    /**
      * Get the full name of the contact.
      *
      * @return string
@@ -623,14 +645,18 @@ class Contact extends Model
             case 'lastname_firstname':
                 $completeName = '';
                 if (! is_null($this->last_name)) {
-                    $completeName = $completeName.' '.$this->last_name;
+                    $completeName = $this->last_name;
                 }
 
                 if (! is_null($this->middle_name)) {
                     $completeName = $completeName.' '.$this->middle_name;
                 }
 
-                $completeName .= ' '.$this->first_name;
+                if ($this->isCjk($this->first_name)) {
+                    $completeName .= $this->first_name;
+                } else {
+                    $completeName .= ' '.$this->first_name;
+                }
                 break;
             case 'firstname_lastname_nickname':
                 $completeName = $this->first_name;
@@ -669,7 +695,11 @@ class Contact extends Model
                     $completeName = $this->last_name;
                 }
 
-                $completeName = $completeName.' '.$this->first_name;
+                if ($this->isCjk($this->first_name)) {
+                    $completeName .= $this->first_name;
+                } else {
+                    $completeName .= ' '.$this->first_name;
+                }
 
                 if (! is_null($this->middle_name)) {
                     $completeName = $completeName.' '.$this->middle_name;
@@ -689,7 +719,11 @@ class Contact extends Model
                     $completeName = $completeName.' ('.$this->nickname.')';
                 }
 
-                $completeName = $completeName.' '.$this->first_name;
+                if ($this->isCjk($this->first_name)) {
+                    $completeName .= $this->first_name;
+                } else {
+                    $completeName .= ' '.$this->first_name;
+                }
 
                 if (! is_null($this->middle_name)) {
                     $completeName = $completeName.' '.$this->middle_name;
