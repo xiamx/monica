@@ -27,7 +27,10 @@ class InstanceHelper
      */
     public static function getPlanInformationFromConfig(string $timePeriod)
     {
-        $timePeriod = $timePeriod.lower();
+        $timePeriod = mb_strtolower($timePeriod);
+        if ($timePeriod != 'monthly' && $timePeriod != 'annual') {
+            return null;
+        }
         $currency = Currency::where('iso', strtoupper(config('cashier.currency')))->first();
         $amount = MoneyHelper::format(config('monica.paid_plan_'.$timePeriod.'_price') / 100, $currency);
 

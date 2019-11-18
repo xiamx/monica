@@ -109,8 +109,8 @@ class InstanceHelperTest extends TestCase
         );
 
         $this->assertCount(
-            3,
-            InstanceHelper::getChangelogEntries(3)
+            1,
+            InstanceHelper::getChangelogEntries(1)
         );
     }
 }
