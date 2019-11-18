@@ -100,25 +100,6 @@ class AccountSubscriptionTest extends FeatureTestCase
         }
     }
 
-    public function test_it_throw_an_error_on_subscribe()
-    {
-        $user = $this->signin();
-        $user->email = 'test_it_throw_an_error_on_subscribe@monica-test.com';
-        $user->save();
-
-        $this->expectException(\App\Exceptions\StripeException::class);
-        $user->account->subscribe('xxx', 'annual');
-    }
-
-    public function test_it_sees_the_plan_names()
-    {
-        $user = $this->signin();
-
-        $response = $this->get('/settings/subscriptions');
-
-        $response->assertSee('Pick a plan below and join over 0 persons who upgraded their Monica.');
-    }
-
     public function test_it_get_the_plan_name()
     {
         $user = $this->signin();
@@ -147,30 +128,14 @@ class AccountSubscriptionTest extends FeatureTestCase
         $this->assertEquals($expected, new DateTime($actual));
     }
 
-    public function test_it_throw_an_error_on_cancel()
-    {
-        $user = $this->signin();
-
-        $plan = factory(PrepaidSubscription::class)->create([
-            'account_id' => $user->account_id,
-            'name' => 'Annual',
-            'ends_at' => new DateTime('2022-01-01')
-        ]);
-
-        $this->expectException(\App\Exceptions\StripeException::class);
-        $user->account->subscriptionCancel();
-    }
-
     public function test_it_get_subscription_page()
     {
         $user = $this->signin();
 
-        factory(Subscription::class)->create([
+        factory(PrepaidSubscription::class)->create([
             'account_id' => $user->account_id,
             'name' => 'Annual',
-            'stripe_plan' => 'annual',
-            'stripe_id' => 'sub_X',
-            'quantity' => 1,
+            'ends_at' => Date('y:m:d', strtotime('+3 days'))
         ]);
 
         $response = $this->get('/settings/subscriptions');
@@ -187,20 +152,6 @@ class AccountSubscriptionTest extends FeatureTestCase
         $response->assertSee('You picked the annual plan.');
     }
 
-    public function test_it_subscribe()
-    {
-        $user = $this->signin();
-        $user->email = 'test_it_subscribe@monica-test.com';
-        $user->save();
-
-        $response = $this->post('/settings/subscriptions/processPayment', [
-            'payment_method' => 'pm_card_visa',
-            'plan' => 'annual',
-        ]);
-
-        $response->assertRedirect('/settings/subscriptions/upgrade/success');
-    }
-
     public function test_it_subscribe_with_2nd_auth()
     {
         $user = $this->signin();
@@ -213,37 +164,5 @@ class AccountSubscriptionTest extends FeatureTestCase
         ]);
 
         $response->assertSee('Confirm your $45.00 payment');
-    }
-
-    public function test_it_subscribe_with_error()
-    {
-        $user = $this->signin();
-        $user->email = 'test_it_subscribe_with_error@monica-test.com';
-        $user->save();
-
-        $response = $this->post('/settings/subscriptions/processPayment', [
-            'payment_method' => 'error',
-            'plan' => 'annual',
-        ], [
-            'HTTP_REFERER' => 'back',
-        ]);
-
-        $response->assertRedirect('/back');
-    }
-
-    public function test_it_does_not_subscribe()
-    {
-        $user = $this->signin();
-        $user->email = 'test_it_does_not_subscribe@monica-test.com';
-        $user->save();
-
-        try {
-            $user->account->subscribe('pm_card_chargeDeclined', 'annual');
-        } catch (\App\Exceptions\StripeException $e) {
-            $this->assertEquals('Your card was declined. Decline message is: Your card was declined.', $e->getMessage());
-
-            return;
-        }
-        $this->fails();
     }
 }
