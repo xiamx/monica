@@ -174,7 +174,7 @@ return [
     'subscriptions_account_free_plan_benefits_import_data_vcard' => '从 vCard 文件导入联系人',
     'subscriptions_account_free_plan_benefits_support' => '支持项目的长久运行, 使我们可以引入更多的功能。',
     'subscriptions_account_upgrade' => '更新您的账户',
-    'subscriptions_account_upgrade_title' => '立即升级您的ClxPRM账户吧！',
+    'subscriptions_account_upgrade_title' => '立即升级您的常联系 PRM 账户吧！',
     'subscriptions_account_upgrade_choice' => '在下方选择一个大会员付费方式（已有 :customers 购买了大会员）',
     'subscriptions_account_invoices' => '发票',
     'subscriptions_account_invoices_download' => '下载',
