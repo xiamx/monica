@@ -492,47 +492,47 @@ workflows:
               ignore: /l10n_master.*/
             tags:
               only: /.*/
-  deploy:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - master
-                - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
-            tags:
-              only: /^v\d+\.\d+(\.\d+)?(-\S*)?$/
-      - deploy-assets:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - master
-                - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
-      - deploy-dist:
-          requires:
-            - build
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /^v\d+\.\d+(\.\d+)?(-\S*)?$/
-      - deploy-docker-master:
-          filters:
-            branches:
-              only:
-                - master
-      - deploy-docker-staging:
-          requires:
-            - deploy-docker-master
-          filters:
-            branches:
-              only:
-                - master
-      - deploy-docker:
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+#  deploy:
+#    jobs:
+#      - build:
+#          filters:
+#            branches:
+#              only:
+#                - master
+#                - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+#            tags:
+#              only: /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+#      - deploy-assets:
+#          requires:
+#            - build
+#          filters:
+#            branches:
+#              only:
+#                - master
+#                - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+#      - deploy-dist:
+#          requires:
+#            - build
+#          filters:
+#            branches:
+#              ignore: /.*/
+#            tags:
+#              only: /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+#      - deploy-docker-master:
+#          filters:
+#            branches:
+#              only:
+#                - master
+#      - deploy-docker-staging:
+#          requires:
+#            - deploy-docker-master
+#          filters:
+#            branches:
+#              only:
+#                - master
+#      - deploy-docker:
+#          filters:
+#            branches:
+#              ignore: /.*/
+#            tags:
+#              only: /^v\d+\.\d+(\.\d+)?(-\S*)?$/
