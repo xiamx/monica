@@ -225,7 +225,7 @@ export default {
       }).then(function(result) {
         console.log(result);
         var source = result.source;
-        window.location.replace(source.redirect.url)
+        window.location.replace(source.redirect.url);
       });
     },
     wechatPayment() {
