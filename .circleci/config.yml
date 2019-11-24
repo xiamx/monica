@@ -205,9 +205,9 @@ jobs:
       - run:
           name: Check js and vue lint
           command: yarn lint
-      - run:
-          name: Update assets
-          command: scripts/ci/update-assets.sh
+#      - run:
+#          name: Update assets
+#          command: scripts/ci/update-assets.sh
 
   tests-7.2:
     <<: *defaults
