@@ -1,7 +1,7 @@
 {
   "name": "常联系 PRM",
   "short_name": "常联系",
-  "start_url": ".",
+  "start_url": "https://clxprm.com/dashboard",
   "display": "standalone",
   "background_color": "#fffbf2",
   "description": "常联系 PRM 是一款个人关系管理系统，你可以用它来记录和亲朋好友互动中的美好瞬间。",
