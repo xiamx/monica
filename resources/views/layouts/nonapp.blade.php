@@ -39,9 +39,9 @@
     <div class="cf">
         <nav class="dt w-100 mw9 center">
             <div class="dtc w2 v-mid pt3 pb3">
-                <a href="/" class="db">
+                <a href="/" class="db" aria-label="Link to go back to landing page">
 
-                    <img src="/img/logo_vertical.png" class="mw-none" style="width: 150px;">
+                    <img src="/img/logo_vertical.png" alt="常联系 PRM" class="mw-none" style="width: 150px;">
                 </a>
             </div>
             <div class="dtc v-mid tr pa3">

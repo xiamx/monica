@@ -24,7 +24,7 @@
                 <p class="measure lh-copy">常联系PRM陪你一起记录珍贵的时刻。</p>
             </div>
             <div class="fl w-50-ns w-100 tc">
-                <img src="/img/demo_1.png" style="width: 340px"/>
+                <img src="/img/demo_1.png" alt="常联系 PRM 界面展示，近况页面" style="width: 340px"/>
             </div>
         </div>
         <div class="cf mb4-ns mb2">
@@ -60,7 +60,7 @@
                 <p class="measure lh-copy">最重要的是，常联系PRM是完全私密的，你记下的内容只有你一个人可以看到。</p>
             </div>
             <div class="fl w-100-ns w-100 tc">
-                <img src="/img/demo_2.png" style=""/>
+                <img src="/img/demo_2.png" alt="常联系 PRM 界面展示，联系人页面" style=""/>
             </div>
         </div>
     </div>

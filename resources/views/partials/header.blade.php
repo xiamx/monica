@@ -4,7 +4,7 @@
       <div class="w-50-l w-100 dtc-l v-mid">
         <div class="tc dib">
           <a href="{{ route('dashboard.index') }}" class="header-logo {{ htmldir() == 'rtl' ? 'ml2' : 'mr2' }}">
-            <img src="img/logo_reverse.png" width="43" height="43" />
+            <img src="img/logo_reverse.png" width="43" height="43" alt="常"/>
           </a>
         </div>
         <div class="dib w-60-l w-80 header-search">
