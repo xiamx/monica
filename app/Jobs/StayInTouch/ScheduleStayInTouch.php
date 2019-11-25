@@ -53,7 +53,8 @@ class ScheduleStayInTouch implements ShouldQueue
 
         $now = now();
         while ($this->contact->stay_in_touch_trigger_date < $now) {
-            // If stay in touch was missed, we reschedule it.
+            // If stay in touch was missed, we send it immediately and also reschedule it
+            NotificationFacade::send($users, new StayInTouchEmail($this->contact));
             $this->contact->setStayInTouchTriggerDate($this->contact->stay_in_touch_frequency, $this->contact->stay_in_touch_trigger_date);
         }
     }
