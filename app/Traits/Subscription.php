@@ -4,32 +4,12 @@ namespace App\Traits;
 
 use App\Helpers\DateHelper;
 use App\Helpers\InstanceHelper;
+use App\Models\Account\PrepaidSubscription;
 use App\Exceptions\StripeException;
 use Illuminate\Support\Facades\Log;
 
 trait Subscription
 {
-    /**
-     * Process the upgrade payment.
-     *
-     * @param string $payment_method
-     * @param string $planName
-     * @return bool|string
-     */
-    public function subscribe(string $payment_method, string $planName)
-    {
-        $plan = InstanceHelper::getPlanInformationFromConfig($planName);
-
-        return $this->stripeCall(function () use ($payment_method, $plan) {
-            $this->newSubscription($plan['name'], $plan['id'])
-                        ->create($payment_method, [
-                            'email' => auth()->user()->email,
-                        ]);
-
-            return true;
-        });
-    }
-
     /**
      * Check if the account is currently subscribed to a plan.
      *
@@ -51,7 +31,7 @@ trait Subscription
     /**
      * Get the subscription the account is subscribed to.
      *
-     * @return App\Models\Account\PrepaidSubscriptions|null
+     * @return PrepaidSubscription|null
      */
     public function getSubscribedPlan()
     {
@@ -70,26 +50,6 @@ trait Subscription
         if (! is_null($plan)) {
             return $plan->name;
         }
-    }
-
-    /**
-     * Cancel the plan the account is subscribed to.
-     *
-     * @return bool|string
-     */
-    public function subscriptionCancel()
-    {
-        $plan = $this->getSubscribedPlan();
-
-        if (! is_null($plan)) {
-            return $this->stripeCall(function () use ($plan) {
-                $plan->cancelNow();
-
-                return true;
-            });
-        }
-
-        return false;
     }
 
     /**

@@ -114,10 +114,13 @@ class SubscriptionsController extends Controller
             if (! $sourceId || ! $plan) {
                 abort(403);
             }
+            $rate = 0;
             if ($plan == 'annual') {
                 $rate = 1039;
             } elseif ($plan == 'monthly') {
                 $rate = 113;
+            } else {
+                abort(400);
             }
             $charge = \Stripe\Charge::create([
                 'amount' => $rate,
@@ -150,10 +153,13 @@ class SubscriptionsController extends Controller
         if (! $sourceId || ! $plan) {
             abort(403);
         }
+        $rate = 0;
         if ($plan == 'annual') {
             $rate = 1039;
         } elseif ($plan == 'monthly') {
             $rate = 113;
+        } else {
+            abort(400);
         }
         $charge = \Stripe\Charge::create([
             'amount' => $rate,

@@ -2,6 +2,7 @@
 
 namespace App\Models\Contact;
 
+use function Safe\preg_match;
 use Carbon\Carbon;
 use App\Helpers\DBHelper;
 use App\Models\User\User;
@@ -598,7 +599,7 @@ class Contact extends Model
     /**
      * Check if string is Chinese or Japanese or Korean
      *
-     * @param $string string input string
+     * @param string $string input string
      * @return bool
      */
     private function isCjk($string) {

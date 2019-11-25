@@ -471,7 +471,7 @@ class Account extends Model
     /**
      * Get the Prepaid subscriptions associated with the account
      *
-     * @return HasOne
+     * @return HasMany
      */
     public function prepaidSubscriptions()
     {
