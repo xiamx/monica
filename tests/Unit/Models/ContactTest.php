@@ -174,7 +174,7 @@ class ContactTest extends FeatureTestCase
         $contact->is_dead = false;
 
         $this->assertEquals(
-            'Peter H Gregory',
+            'Gregory H Peter',
             $contact->name
         );
 
@@ -183,7 +183,7 @@ class ContactTest extends FeatureTestCase
         $contact->middle_name = null;
         $contact->last_name = 'Gregory';
         $this->assertEquals(
-            'Peter Gregory',
+            'Gregory Peter',
             $contact->name
         );
 
@@ -203,7 +203,7 @@ class ContactTest extends FeatureTestCase
         $contact->nickname = 'Rambo';
         $contact->is_dead = true;
         $this->assertEquals(
-            'Peter H Gregory ⚰',
+            'Gregory H Peter ⚰',
             $contact->name
         );
 
@@ -300,7 +300,7 @@ class ContactTest extends FeatureTestCase
         $contact->last_name = 'Gregory';
 
         $this->assertEquals(
-            'PHG',
+            'GHP',
             $contact->getInitials()
         );
     }
@@ -313,7 +313,7 @@ class ContactTest extends FeatureTestCase
         $contact->last_name = 'Gregory';
 
         $this->assertEquals(
-            'PG',
+            'GP',
             $contact->getInitials()
         );
     }
@@ -326,7 +326,7 @@ class ContactTest extends FeatureTestCase
         $contact->last_name = null;
 
         $this->assertEquals(
-            'PH',
+            'HP',
             $contact->getInitials()
         );
     }

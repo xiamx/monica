@@ -39,7 +39,7 @@ class ExportVCardTest extends TestCase
             self::defaultPropsCount + 2,
             $vCard->children()
         );
-        $this->assertStringContainsString('FN:John Doe', $vCard->serialize());
+        $this->assertStringContainsString('FN:Doe John', $vCard->serialize());
         $this->assertStringContainsString('N:Doe;John;;;', $vCard->serialize());
     }
 
@@ -59,7 +59,7 @@ class ExportVCardTest extends TestCase
             self::defaultPropsCount + 3,
             $vCard->children()
         );
-        $this->assertStringContainsString('FN:John Doe', $vCard->serialize());
+        $this->assertStringContainsString('FN:Doe John', $vCard->serialize());
         $this->assertStringContainsString('N:Doe;John;;;', $vCard->serialize());
         $this->assertStringContainsString('NICKNAME:the nickname', $vCard->serialize());
     }
