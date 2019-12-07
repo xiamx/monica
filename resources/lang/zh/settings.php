@@ -21,7 +21,7 @@ return [
     'export_sql_link_instructions' => '注意: <a href=":url">阅读说明</a>, 了解有关将此文件导入到您的实例的详细信息。',
 
     'firstname' => '名',
-    'lastname' => '姓氏',
+    'lastname' => '姓',
     'name_order' => '名称顺序',
     'name_order_firstname_lastname' => '<名> <姓> - 小明 王',
     'name_order_lastname_firstname' => '<姓> <名> - 王 小明',

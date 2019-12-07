@@ -61,7 +61,7 @@ return [
     'register_email_example' => '10010@foxmail.com',
     'register_firstname' => '名字',
     'register_firstname_example' => '云',
-    'register_lastname' => '姓氏',
+    'register_lastname' => '姓',
     'register_lastname_example' => '马',
     'register_password' => '密码',
     'register_password_example' => '键入密码...',

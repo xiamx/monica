@@ -144,7 +144,7 @@ return [
     'information_edit_max_size' => '最大值 :size Kb',
     'information_edit_max_size2' => '最大 {size} Kb',
     'information_edit_firstname' => '名字',
-    'information_edit_lastname' => '姓氏（可选）',
+    'information_edit_lastname' => '姓（可选）',
     'information_edit_description' => '说明 (可选)',
     'information_edit_description_help' => '用于在联系人列表中添加一些元素（如有必要）',
     'information_edit_unknown' => '我不知道具体年龄',
