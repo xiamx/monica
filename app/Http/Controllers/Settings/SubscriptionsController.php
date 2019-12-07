@@ -132,7 +132,11 @@ class SubscriptionsController extends Controller
             $prepaidSub->account_id = auth()->user()->account_id;
             $prepaidSub->name = $plan;
             $ends_at = new DateTime();
-            $ends_at->modify( '+1 year');
+            if ($plan == 'annual') {
+                $ends_at->modify( '+1 year');
+            } else {
+                $ends_at->modify( '+1 month');
+            }
             $prepaidSub->ends_at = $ends_at;
             $prepaidSub->save();
 
@@ -171,7 +175,11 @@ class SubscriptionsController extends Controller
         $prepaidSub->account_id = auth()->user()->account_id;
         $prepaidSub->name = $plan;
         $ends_at = new DateTime();
-        $ends_at->modify( '+1 year');
+        if ($plan == 'annual') {
+            $ends_at->modify( '+1 year');
+        } else {
+            $ends_at->modify( '+1 month');
+        }
         $prepaidSub->ends_at = $ends_at;
         $prepaidSub->save();
 
