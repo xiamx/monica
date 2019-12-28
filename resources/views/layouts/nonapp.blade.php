@@ -86,10 +86,26 @@
         background-color: #3cb371;
         border: 1px solid #3cb371;
         border-bottom-color: rgb(60, 179, 113);
-        border-bottom-width: 1px;
         border-bottom-color: rgba(0, 0, 0, .15);
         color: #fff;
         border-bottom-width: 2px;
+    }
+
+    .primary-button:hover {
+        background-color: #3cb371;
+        border: 1px solid #3cb371;
+        border-bottom-color: rgb(60, 179, 113);
+        border-bottom-color: rgba(0, 0, 0, .15);
+        color: #fff;
+        border-bottom-width: 2px;
+    }
+
+    a {
+        color: #606266;
+    }
+
+    a:hover {
+        background-color: #3cb371;
     }
 </style>
 </body>
