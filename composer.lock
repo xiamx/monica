@@ -6494,16 +6494,16 @@
         },
         {
             "name": "sabre/dav",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/dav.git",
-                "reference": "e06e6202768babaab053e7ab260d1e43139a7753"
+                "reference": "b793fb4ce27cf0f981b540ad771281c430ffe818"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/dav/zipball/e06e6202768babaab053e7ab260d1e43139a7753",
-                "reference": "e06e6202768babaab053e7ab260d1e43139a7753",
+                "url": "https://api.github.com/repos/sabre-io/dav/zipball/b793fb4ce27cf0f981b540ad771281c430ffe818",
+                "reference": "b793fb4ce27cf0f981b540ad771281c430ffe818",
                 "shasum": ""
             },
             "require": {
@@ -6569,7 +6569,7 @@
                 "framework",
                 "iCalendar"
             ],
-            "time": "2019-08-20T08:21:08+00:00"
+            "time": "2020-01-10T07:52:45+00:00"
         },
         {
             "name": "sabre/event",
@@ -6633,28 +6633,28 @@
         },
         {
             "name": "sabre/http",
-            "version": "5.0.0",
+            "version": "5.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/http.git",
-                "reference": "f91c7d4437dcbc6f89c8b64e855e1544f4b60250"
+                "reference": "85962a2ed867e7e5beb9f9d3a15cd53cd521a09b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/http/zipball/f91c7d4437dcbc6f89c8b64e855e1544f4b60250",
-                "reference": "f91c7d4437dcbc6f89c8b64e855e1544f4b60250",
+                "url": "https://api.github.com/repos/sabre-io/http/zipball/85962a2ed867e7e5beb9f9d3a15cd53cd521a09b",
+                "reference": "85962a2ed867e7e5beb9f9d3a15cd53cd521a09b",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
+                "ext-curl": "*",
                 "ext-mbstring": "*",
-                "php": ">=7.0",
+                "php": "^7.0",
                 "sabre/event": ">=4.0 <6.0",
                 "sabre/uri": "^2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=6.0.0",
-                "sabre/cs": "~1.0.0"
+                "phpunit/phpunit": "^6.0 || ^7.0"
             },
             "suggest": {
                 "ext-curl": " to make http requests with the Client class"
@@ -6685,20 +6685,20 @@
             "keywords": [
                 "http"
             ],
-            "time": "2018-06-04T21:27:19+00:00"
+            "time": "2019-11-28T19:35:25+00:00"
         },
         {
             "name": "sabre/uri",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/uri.git",
-                "reference": "c260a55cbd2083c03484f56f72fe042fee0c17ed"
+                "reference": "18f454324f371cbcabdad3d0d3755b4b0182095d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/uri/zipball/c260a55cbd2083c03484f56f72fe042fee0c17ed",
-                "reference": "c260a55cbd2083c03484f56f72fe042fee0c17ed",
+                "url": "https://api.github.com/repos/sabre-io/uri/zipball/18f454324f371cbcabdad3d0d3755b4b0182095d",
+                "reference": "18f454324f371cbcabdad3d0d3755b4b0182095d",
                 "shasum": ""
             },
             "require": {
@@ -6735,20 +6735,20 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-06-25T05:34:33+00:00"
+            "time": "2019-09-09T23:00:25+00:00"
         },
         {
             "name": "sabre/vobject",
-            "version": "4.2.0",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/vobject.git",
-                "reference": "bd500019764e434ff65872d426f523e7882a0739"
+                "reference": "6d7476fbd227ae285029c19ad518cd451336038c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/vobject/zipball/bd500019764e434ff65872d426f523e7882a0739",
-                "reference": "bd500019764e434ff65872d426f523e7882a0739",
+                "url": "https://api.github.com/repos/sabre-io/vobject/zipball/6d7476fbd227ae285029c19ad518cd451336038c",
+                "reference": "6d7476fbd227ae285029c19ad518cd451336038c",
                 "shasum": ""
             },
             "require": {
@@ -6831,7 +6831,7 @@
                 "xCal",
                 "xCard"
             ],
-            "time": "2019-02-19T13:05:37+00:00"
+            "time": "2019-12-18T19:29:43+00:00"
         },
         {
             "name": "sabre/xml",
@@ -10421,6 +10421,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-07-10T16:13:25+00:00"
         }
     ],
@@ -13345,12 +13346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ea693fa060702164985511acc3ceb5389c9ac761"
+                "reference": "67ac6ea8f4a078c3c9b7aec5d7ae70f098c37389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ea693fa060702164985511acc3ceb5389c9ac761",
-                "reference": "ea693fa060702164985511acc3ceb5389c9ac761",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/67ac6ea8f4a078c3c9b7aec5d7ae70f098c37389",
+                "reference": "67ac6ea8f4a078c3c9b7aec5d7ae70f098c37389",
                 "shasum": ""
             },
             "conflict": {
@@ -13371,9 +13372,9 @@
                 "composer/composer": "<=1-alpha.11",
                 "contao-components/mediaelement": ">=2.14.2,<2.21.1",
                 "contao/core": ">=2,<3.5.39",
-                "contao/core-bundle": ">=4,<4.4.39|>=4.5,<4.7.5",
+                "contao/core-bundle": ">=4,<4.4.46|>=4.5,<4.8.6",
                 "contao/listing-bundle": ">=4,<4.4.8",
-                "contao/newsletter-bundle": ">=4,<4.1",
+                "datadog/dd-trace": ">=0.30,<0.30.2",
                 "david-garcia/phpwhois": "<=4.3.1",
                 "doctrine/annotations": ">=1,<1.2.7",
                 "doctrine/cache": ">=1,<1.3.2|>=1.4,<1.4.2",
@@ -13385,8 +13386,9 @@
                 "doctrine/mongodb-odm-bundle": ">=2,<3.0.1",
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.67|>=8,<8.6.16|>=8.7,<8.7.1|>8.7.3,<8.7.5",
-                "drupal/drupal": ">=7,<7.67|>=8,<8.6.16|>=8.7,<8.7.1|>8.7.3,<8.7.5",
+                "drupal/core": ">=7,<7.69|>=8,<8.7.11|>=8.8,<8.8.1",
+                "drupal/drupal": ">=7,<7.69|>=8,<8.7.11|>=8.8,<8.8.1",
+                "endroid/qr-code-bundle": "<3.4.2",
                 "erusev/parsedown": "<1.7.2",
                 "ezsystems/ezplatform-admin-ui": ">=1.3,<1.3.5|>=1.4,<1.4.4",
                 "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.13.1|>=6,<6.7.9.1|>=6.8,<6.13.5.1|>=7,<7.2.4.1|>=7.3,<7.3.2.1",
@@ -13416,9 +13418,9 @@
                 "laravel/framework": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.42|>=5.6,<5.6.30",
                 "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
                 "league/commonmark": "<0.18.3",
-                "magento/magento1ce": "<1.9.4.1",
-                "magento/magento1ee": ">=1.9,<1.14.4.1",
-                "magento/product-community-edition": ">=2,<2.2.8|>=2.3,<2.3.1",
+                "magento/magento1ce": "<1.9.4.3",
+                "magento/magento1ee": ">=1,<1.14.4.3",
+                "magento/product-community-edition": ">=2,<2.2.10|>=2.3,<2.3.2-p.2",
                 "monolog/monolog": ">=1.8,<1.12",
                 "namshi/jose": "<2.2",
                 "onelogin/php-saml": "<2.10.4",
@@ -13439,8 +13441,9 @@
                 "propel/propel": ">=2-alpha.1,<=2-alpha.7",
                 "propel/propel1": ">=1,<=1.7.1",
                 "pusher/pusher-php-server": "<2.2.1",
-                "robrichards/xmlseclibs": ">=1,<3.0.2",
+                "robrichards/xmlseclibs": ">=1,<3.0.4",
                 "sabre/dav": ">=1.6,<1.6.99|>=1.7,<1.7.11|>=1.8,<1.8.9",
+                "scheb/two-factor-bundle": ">=0,<3.26|>=4,<4.11",
                 "sensiolabs/connect": "<4.2.3",
                 "serluck/phpwhois": "<=4.2.6",
                 "shopware/shopware": "<5.3.7",
@@ -13453,7 +13456,7 @@
                 "silverstripe/userforms": "<3",
                 "simple-updates/phpwhois": "<=1",
                 "simplesamlphp/saml2": "<1.10.6|>=2,<2.3.8|>=3,<3.1.4",
-                "simplesamlphp/simplesamlphp": "<1.17.3",
+                "simplesamlphp/simplesamlphp": "<1.17.8",
                 "simplesamlphp/simplesamlphp-module-infocard": "<1.0.1",
                 "slim/slim": "<2.6",
                 "smarty/smarty": "<3.1.33",
@@ -13461,18 +13464,20 @@
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "stormpath/sdk": ">=0,<9.9.99",
+                "studio-42/elfinder": "<2.1.48",
                 "swiftmailer/swiftmailer": ">=4,<5.4.5",
                 "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
                 "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
                 "sylius/grid-bundle": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
                 "sylius/sylius": ">=1,<1.1.18|>=1.2,<1.2.17|>=1.3,<1.3.12|>=1.4,<1.4.4",
-                "symfony/cache": ">=3.1,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
+                "symfony/cache": ">=3.1,<3.4.35|>=4,<4.2.12|>=4.3,<4.3.8",
                 "symfony/dependency-injection": ">=2,<2.0.17|>=2.7,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
                 "symfony/form": ">=2.3,<2.3.35|>=2.4,<2.6.12|>=2.7,<2.7.50|>=2.8,<2.8.49|>=3,<3.4.20|>=4,<4.0.15|>=4.1,<4.1.9|>=4.2,<4.2.1",
                 "symfony/framework-bundle": ">=2,<2.3.18|>=2.4,<2.4.8|>=2.5,<2.5.2|>=2.7,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
-                "symfony/http-foundation": ">=2,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
-                "symfony/http-kernel": ">=2,<2.3.29|>=2.4,<2.5.12|>=2.6,<2.6.8",
+                "symfony/http-foundation": ">=2,<2.8.52|>=3,<3.4.35|>=4,<4.2.12|>=4.3,<4.3.8",
+                "symfony/http-kernel": ">=2,<2.8.52|>=3,<3.4.35|>=4,<4.2.12|>=4.3,<4.3.8",
                 "symfony/intl": ">=2.7,<2.7.38|>=2.8,<2.8.31|>=3,<3.2.14|>=3.3,<3.3.13",
+                "symfony/mime": ">=4.3,<4.3.8",
                 "symfony/phpunit-bridge": ">=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
                 "symfony/polyfill": ">=1,<1.10",
                 "symfony/polyfill-php55": ">=1,<1.10",
@@ -13483,11 +13488,12 @@
                 "symfony/security-core": ">=2.4,<2.6.13|>=2.7,<2.7.9|>=2.7.30,<2.7.32|>=2.8,<2.8.37|>=3,<3.3.17|>=3.4,<3.4.7|>=4,<4.0.7",
                 "symfony/security-csrf": ">=2.4,<2.7.48|>=2.8,<2.8.41|>=3,<3.3.17|>=3.4,<3.4.11|>=4,<4.0.11",
                 "symfony/security-guard": ">=2.8,<2.8.41|>=3,<3.3.17|>=3.4,<3.4.11|>=4,<4.0.11",
-                "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
+                "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.2.12|>=4.3,<4.3.8",
                 "symfony/serializer": ">=2,<2.0.11",
-                "symfony/symfony": ">=2,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
+                "symfony/symfony": ">=2,<2.8.52|>=3,<3.4.35|>=4,<4.2.12|>=4.3,<4.3.8",
                 "symfony/translation": ">=2,<2.0.17",
                 "symfony/validator": ">=2,<2.0.24|>=2.1,<2.1.12|>=2.2,<2.2.5|>=2.3,<2.3.3",
+                "symfony/var-exporter": ">=4.2,<4.2.12|>=4.3,<4.3.8",
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "tecnickcom/tcpdf": "<6.2.22",
@@ -13497,8 +13503,8 @@
                 "titon/framework": ">=0,<9.9.99",
                 "truckersmp/phpwhois": "<=4.3.1",
                 "twig/twig": "<1.38|>=2,<2.7",
-                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.27|>=9,<9.5.8",
-                "typo3/cms-core": ">=8,<8.7.27|>=9,<9.5.8",
+                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.30|>=9,<9.5.12|>=10,<10.2.1",
+                "typo3/cms-core": ">=8,<8.7.30|>=9,<9.5.12|>=10,<10.2.1",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
                 "typo3/phar-stream-wrapper": ">=1,<2.1.1|>=3,<3.1.1",
@@ -13552,7 +13558,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-07-18T15:17:58+00:00"
+            "time": "2020-01-06T19:16:46+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
